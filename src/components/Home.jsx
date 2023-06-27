@@ -24,13 +24,13 @@ const Home = () => {
           <div className="content">
             <div className="left">
               <div className="inner">
-                <h3 className="hello">Hola, te presento</h3>
+                <h3 className="hello">Hola, te presentamos</h3>
                 <h3 className="name">
                   {homeData.firstName} {/* {homeData.lastName} */}
                 </h3>
                 <h3 className="job">
                   {/* {homeData.designation} from {homeData.address} */}
-                  Una nueva forma de impulsar tu negocio digital
+                  Una nueva forma de impulsar tu negocio digitals
                 </h3>
                 <p className="text">{homeData.bio}</p>
                 <div className="buttons">
