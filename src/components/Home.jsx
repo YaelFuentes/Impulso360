@@ -1,4 +1,5 @@
 /* import Counter from "./Counter"; */
+import ImgBackground from '../../public/img/hero/background.png'
 
 const homeData = {
   firstName: "Impulso360",
@@ -16,7 +17,8 @@ const Home = () => {
     <div className="devman_tm_section" id="home">
       <div className="devman_tm_hero">
         <div className="background">
-          <div className="image" data-img-url="img/hero/1_1.png" style={{backgroundColor: 'rgba(0, 0, 0, 0.6)',  opacity: 0.5,}}/>
+          <div className="image" data-img-url='../../public/img/hero/background.png' style={{backgroundColor: 'rgba(0, 0, 0, 0.6)',  opacity: 0.5,}}/>
+          <img src='img/hero/background.png'/>
         </div>
         <div className="container">
           <div className="content">
@@ -79,9 +81,9 @@ const Home = () => {
                     </span>
                   </div>
                 </div>
-               {/*  <span className="circle anim_circle">
+                <span className="circle anim_circle">
                   <img src="img/hero/circle.png" alt="" />
-                </span> */}
+                </span>
               </div>
             </div>
           </div>
