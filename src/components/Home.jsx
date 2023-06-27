@@ -22,7 +22,7 @@ const Home = () => {
           <div className="content">
             <div className="left">
               <div className="inner">
-                <h3 className="hello">Hola, te presento</h3>
+                <h3 className="hello">Hola, te presentamos</h3>
                 <h3 className="name">
                   {homeData.firstName} {/* {homeData.lastName} */}
                 </h3>
