@@ -101,7 +101,7 @@ export const dataImage = () => {
   }
 };
 
-export const imgToSVG = () => {
+/* export const imgToSVG = () => {
   document.querySelectorAll("img.svg").forEach((el) => {
     const imgID = el.getAttribute("id");
     const imgClass = el.getAttribute("class");
@@ -128,7 +128,7 @@ export const imgToSVG = () => {
         }
       });
   });
-};
+}; */
 
 export const activeSection = (value) => {
   const sections = document.querySelectorAll(".edrea_tm_section");
