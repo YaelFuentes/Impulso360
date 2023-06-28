@@ -31,7 +31,7 @@ const About = () => {
                   priority
                   sizes='(max-width:768px) 100vw,
               (max-width:1200px) 50vm, 50vw'
-                  src="https://assets7.lottiefiles.com/packages/lf20_qct0ydor.json"
+                  src="https://assets5.lottiefiles.com/packages/lf20_su8vw1n6.json"
                   className='w-full h-auto'
                 />
                 <div className="extra_image">
