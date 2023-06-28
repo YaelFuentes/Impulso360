@@ -8,11 +8,11 @@ import CounterSection from "../components/CounterSection";
 import Features from "../components/Features";
 import Home from "../components/Home";
 import Partners from "../components/Partners";
-/* import Portfolio from "../components/Portfolio"; */
-/* import Process from "../components/Process"; */
-/* import Service from "../components/Service";
-import Skills from "../components/Skills"; */
-// import Testimonials from "../components/Testimonials";
+import Portfolio from "../components/Portfolio";
+import Process from "../components/Process";
+import Service from "../components/Service";
+import Skills from "../components/Skills";
+/* import Testimonials from "../components/Testimonials"; */
 import Head from "next/head";
 import Header from "../layouts/Header";
 import Layout from "../layouts/Layout";
@@ -20,9 +20,9 @@ import MobileHeader from "../layouts/MobileHeader";
 import Mouse from "../layouts/Mouse";
 import ScrollTop from "../layouts/ScrollTop";
 import HomePage from "./home";
-/* const Testimonials = dynamic(() => import("../src/components/Testimonials"), {
+const Testimonials = dynamic(() => import("../components/Testimonials"), {
   ssr: false,
-}); */
+});
 const Index = () => {
   useEffect(() => {
     document.querySelector("body").classList.add("dark");
@@ -39,12 +39,12 @@ const Index = () => {
       <Home />
       <Features />
       <About />
-      <CounterSection />
-{/*       <Portfolio /> */}
-{/*       <Skills />
-      <Service /> */}
-{/*       <Process /> */}
-      {/* <Testimonials /> */}
+      {/* <CounterSection /> */}
+      <Portfolio />
+      <Skills />
+      <Service />
+      <Process /> 
+      <Testimonials />
       <Partners dark />
       <Contact />
       <Blog />

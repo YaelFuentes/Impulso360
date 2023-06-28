@@ -1,19 +1,24 @@
 const features_list = [
     {
-      title: "Dedication",
+      title: "Analisis e investigacion",
       icon: "img/svg/design.svg",
-      text: "Sed do eiusmod tempor incididunt ut labore ullamco laboris nisi ut aliquip ex ea commo do conse namber onequat.",
+      text: "Comenzaremos armando la estrategia de tu marca a partir de una investigación de mercado. El periodo dura 7 dias hábiles.",
     },
     {
-      title: "Smart Work",
+      title: "Presentacion de proyecto",
       icon: "img/svg/development.svg",
-      text: "Sed do eiusmod tempor incididunt ut labore ullamco laboris nisi ut aliquip ex ea commo do conse namber onequat.",
+      text: "Luego se comenzara a trabajar en la idea principal de la estrategia integral. Esto incluye modelo de mercado, diseño grafico y redes sociales.",
     },
     {
-      title: "Intelligence",
+      title: "Armado de herramientas en linea",
       icon: "img/svg/landing.svg",
-      text: "Sed do eiusmod tempor incididunt ut labore ullamco laboris nisi ut aliquip ex ea commo do conse namber onequat.",
+      text: "Teniendo acordada la identidad visual de tu marca comenzaremos a plasmarla en tu nuevo sitio web y redes sociales de la mano de nuestros diseñadores y analistas.",
     },
+    {
+      title: "Lanzamiento oficial",
+      icon: "img/svg/landing.svg",
+      text: "Cuando se cumplan los 30 días de haber comenzado el proyecto, se realiza el lanzamiento de la estrategia integral de todos los métodos de comunicacion elegidos.",
+    }
   ];
   const Features = () => {
     return (
