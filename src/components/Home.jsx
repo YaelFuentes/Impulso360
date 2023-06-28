@@ -1,5 +1,5 @@
-/* import Counter from "./Counter"; */
-
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import LottiePlayer from './Animations/Home';
 const homeData = {
   firstName: "Impulso360",
   img: "img/hero/2.jpg",
@@ -47,26 +47,7 @@ const Home = () => {
               <h3 className="stroke_2">{homeData.lastName}</h3>
             </div>
             <div className="right">
-              <div className="image">
-                <img src="img/thumbs/53-61.jpg" alt="" />
-                <div className="main" data-img-url={homeData.img} />
-                <div className="w-full h-auto">
-                  <img src="../../public/imagenes/redes/instagram.png" alt="" />
-                </div>
-                <div className="numbers year">
-                  <div className="wrapper">
-                    <div className="main" data-img-url={homeData.imgIg} />
-                  </div>
-                </div>
-                <div className="numbers project">
-                  <div className="wrapper">
-                  <div className="main" data-img-url={homeData.fb} />
-                  </div>
-                </div>
-                {/*  <span className="circle anim_circle">
-                  <img src="img/hero/circle.png" alt="" />
-                </span> */}
-              </div>
+              <LottiePlayer/>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ import { dataImage, imgToSVG } from "../utilits";
 const Testimonials = () => {
   useEffect(() => {
     dataImage();
-    imgToSVG();
+    /* imgToSVG(); */
   }, []);
 
   return (

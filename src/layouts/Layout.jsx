@@ -6,7 +6,7 @@ import Preloader from "../layouts/Preloader";
 import {
   dataImage,
   devman_tm_moving_animation,
-  imgToSVG,
+  /* imgToSVG, */
   wowJsAnimation,
 } from "../utilits";
 const Layout = ({ children }) => {
