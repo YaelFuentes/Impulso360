@@ -12,7 +12,7 @@ import {
 const Layout = ({ children }) => {
   useEffect(() => {
     dataImage();
-    imgToSVG();
+    /* imgToSVG(); */
     wowJsAnimation();
     devman_tm_moving_animation();
   }, []);
