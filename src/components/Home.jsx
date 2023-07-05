@@ -1,5 +1,7 @@
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import LottiePlayer from './Animations/Home';
+import CarouselComponent from './Animations/Carrousel';
+
 const homeData = {
   firstName: "Impulso360",
   img: "img/hero/2.jpg",
@@ -10,15 +12,22 @@ const homeData = {
   numberofyear: 2,
 };
 
+const images = [
+  { src: '/imagenes/carousel/carousel1.jpg', alt: 'Image 1', height: '1080', width: '1920'},
+  { src: '/imagenes/carousel/carousel2.jpg', alt: 'Image 2', height: '1080', width: '1920'},
+  { src: '/imagenes/carousel/carousel3.jpg', alt: 'Image 3', height: '1080', width: '1920'},
+];
+
 const Home = () => {
   return (
     <div className="devman_tm_section" id="home">
       <div className="devman_tm_hero">
         <div className="background">
-          <div className="image" data-img-url="img/hero/1_1.png" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', opacity: 0.5, }} />
-        </div>
+        <CarouselComponent images={images}/>
+        </div> 
         <div className="container">
           <div className="content">
+          
             <div className="left">
               <div className="inner">
                 <h3 className="hello">Hola, te presentamos</h3>
@@ -47,7 +56,7 @@ const Home = () => {
               <h3 className="stroke_2">{homeData.lastName}</h3>
             </div>
             <div className="right">
-              <LottiePlayer/>
+              {/* <LottiePlayer/> */}
             </div>
           </div>
         </div>
@@ -56,3 +65,4 @@ const Home = () => {
   );
 };
 export default Home;
+

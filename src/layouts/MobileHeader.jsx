@@ -33,28 +33,28 @@ const MobileHeader = () => {
         <div className="dropdown_inner">
           <ul className="anchor_nav">
             <li>
-              <a href="#home">Home</a>
+              <a href="#home">Inicio</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about">Nosotros</a>
             </li>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a href="#portfolio">Proyectos</a>
             </li>
             <li>
-              <a href="#service">Service</a>
+              <a href="#service">Servicios</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact">Contacto</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#blog">Blog</a>
             </li>
             <li className="download_cv">
               <a href="img/cv/1.jpg" download>
                 Download CV
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

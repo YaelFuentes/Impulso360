@@ -54,6 +54,9 @@ const Service = () => {
         data={activeData}
       />
       <div className="devman_tm_section" id="service">
+        <h2 className="text-center pb-8 text-4xl font-bold ">
+          Servicios que ofrecemos
+        </h2>
         <div className="devman_tm_service">
           <div className="container">
             <div className="service_list">

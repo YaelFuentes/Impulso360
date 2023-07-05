@@ -11,7 +11,9 @@ const LottiePlayer = () => (
       mode="bounce"
       background="rgba(255, 255, 255, 0)"
       speed="1"
-      style={{ width: '800px', height: '800px' }}
+      sizes='(max-width:768px) 500vw,
+              (max-width:1200px) 20vm, 20vw'
+      /* style={{ width: '500px', height: 'auto' }} */
       loop
       autoplay
     ></lottie-player>

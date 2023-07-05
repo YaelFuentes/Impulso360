@@ -2,24 +2,24 @@ import { Fragment, useEffect, useRef, useState } from "react";
 
 const accordionData = [
   {
-    title: "Work Strategy",
+    title: "¿Cuánto tiempo lleva desarrollar una página web personalizada?",
     details:
-      "Ut enim ad minim veniam, quis nostrud exercitation utur adipisicing elit, sed do eiusmod einisha chor amay vebona sukher mohona kobita tumi sopono carini hoye.",
+      "El tiempo de desarrollo de una página web personalizada varía según la complejidad del proyecto. Proyectos más simples pueden completarse en unas pocas semanas, mientras que proyectos más complejos pueden llevar de uno a tres meses. El plazo exacto se determina durante las etapas de planificación y diseño, y trabajaremos en estrecha colaboración contigo para cumplir con tus fechas límite.",
   },
   {
-    title: "The Process of Our Work",
+    title: "¿Ofrecen servicios de diseño de logotipos y branding?",
     details:
-      "Ut enim ad minim veniam, quis nostrud exercitation utur adipisicing elit, sed do eiusmod einisha chor amay vebona sukher mohona kobita tumi sopono carini hoye.",
+      "Sí, ofrecemos servicios de diseño de logotipos y branding. Nuestro talentoso equipo de diseñadores puede ayudarte a crear una identidad visual sólida y atractiva para tu empresa. Desde el diseño del logotipo hasta la selección de colores y tipografía, nos aseguraremos de que tu marca destaque y transmita la esencia de tu negocio.",
   },
   {
-    title: "Core Value of Development",
+    title: "¿Proporcionan servicios de alojamiento web y registro de dominios?",
     details:
-      "Ut enim ad minim veniam, quis nostrud exercitation utur adipisicing elit, sed do eiusmod einisha chor amay vebona sukher mohona kobita tumi sopono carini hoye.",
+      "Sí, podemos ayudarte con el alojamiento web y el registro de dominios. Podemos recomendar opciones de alojamiento confiables y registradores de dominios para que puedas elegir el más adecuado para tus necesidades. Si ya tienes un proveedor de alojamiento y dominio, también podemos trabajar con ellos.",
   },
   {
-    title: "Desire to Work Hard",
+    title: "¿Qué es el SEO y cómo pueden ayudarme a mejorar la visibilidad de mi sitio web en los motores de búsqueda?",
     details:
-      "Ut enim ad minim veniam, quis nostrud exercitation utur adipisicing elit, sed do eiusmod einisha chor amay vebona sukher mohona kobita tumi sopono carini hoye.",
+      "El SEO (Search Engine Optimization) se refiere a las prácticas que implementamos para mejorar la visibilidad de tu sitio web en los motores de búsqueda como Google. Esto implica optimizar diversos aspectos, como la estructura del sitio, las palabras clave relevantes, la velocidad de carga, el contenido de calidad y los enlaces externos. Nuestro equipo de expertos en SEO puede implementar estrategias efectivas para aumentar tu clasificación en los motores de búsqueda y atraer más tráfico orgánico a tu sitio web.",
   },
 ];
 
@@ -55,9 +55,9 @@ const Accordion = () => {
               style={
                 active === i
                   ? {
-                      height:
-                        contentEl.current && contentEl.current.scrollHeight,
-                    }
+                    height:
+                      contentEl.current && contentEl.current.scrollHeight,
+                  }
                   : { height: "0px" }
               }
             >

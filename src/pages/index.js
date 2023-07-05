@@ -31,29 +31,29 @@ const Index = () => {
   return (
     <>
       <Layout>
-      <Head>
-        <title>Devman | Home</title>
-      </Head>
-      <MobileHeader />
-      <Header />
-      <Home />
-      <Features />
-      <About />
-      {/* <CounterSection /> */}
-      <Portfolio />
-      <Skills />
-      <Service />
-      <Process /> 
-      <Testimonials />
-      <Partners dark />
-      <Contact />
-      <Blog />
-      <Copyright />
-      <Mouse />
-      <ScrollTop />
-    </Layout>
+        <Head>
+          <title>Impulso360</title>
+        </Head>
+        <MobileHeader />
+        <Header />
+        <Home />
+        <Features />
+        <About />
+        {/* <CounterSection /> */}
+        <Portfolio />
+        <Skills />
+        <Service />
+        <Process />
+        <Testimonials />
+        <Partners dark />
+        <Contact />
+        <Blog />
+        <Copyright />
+        <Mouse />
+        <ScrollTop />
+      </Layout>
     </>
-    
+
   );
 };
 export default Index;

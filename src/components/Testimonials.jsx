@@ -13,11 +13,10 @@ const Testimonials = () => {
       <div className="devman_tm_testimonials">
         <div className="container">
           <div className="devman_tm_main_title" data-text-align="center">
-            <span>Testimonial</span>
-            <h3>What Clients Say</h3>
+            <span>Testimonios</span>
+            <h3>¿Que dicen nuestros clientes?</h3>
             <p>
-              Dliquip ex ea commo do conse namber onequa ute irure dolor in
-              reprehen derit in voluptate
+            Descubre lo que nuestros clientes satisfechos dicen sobre nuestra excelencia
             </p>
           </div>
           <div
