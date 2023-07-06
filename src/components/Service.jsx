@@ -3,9 +3,9 @@ import ServicePopup from "./popup/ServicePopup";
 
 const serviceData = [
   {
-    name: "Desktop Application",
+    name: "Desarrollo Web",
     icon: "img/svg/cpu.svg",
-    img: "img/service/1.jpg",
+    img: "https://assets9.lottiefiles.com/packages/lf20_BSBIO0WLnt.json",
     description: [
       "Devman is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
       "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
@@ -69,7 +69,7 @@ const Service = () => {
                   >
                     <div className="list_inner">
                       <img className="svg" src={service.icon} alt="" />
-                      <h3 className="title">{service.name}</h3>
+                      <div className="title">{service.name}</div>
                       <p className="text">
                         {service.description[0].substring(0, 138)}.
                       </p>

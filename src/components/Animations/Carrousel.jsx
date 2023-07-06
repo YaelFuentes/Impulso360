@@ -68,8 +68,8 @@ export default function CarouselComponent({ images }) {
                     key={index}
                     src={image.src}
                     alt={image.alt}
-                    width={image.width}
-                    height={image.height}
+                    fill
+                    className="w-full h-full top-0 left-0 object-cover rounded-2xl"
                   />
                 </div>
                 {isCurrentSlide && (

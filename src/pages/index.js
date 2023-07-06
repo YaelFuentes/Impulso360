@@ -19,7 +19,7 @@ import Layout from "../layouts/Layout";
 import MobileHeader from "../layouts/MobileHeader";
 import Mouse from "../layouts/Mouse";
 import ScrollTop from "../layouts/ScrollTop";
-import HomePage from "./home";
+/* import HomePage from "./home"; */
 const Testimonials = dynamic(() => import("../components/Testimonials"), {
   ssr: false,
 });
@@ -38,16 +38,16 @@ const Index = () => {
         <Header />
         <Home />
         <Features />
+        <Service />
         <About />
         {/* <CounterSection /> */}
         <Portfolio />
         <Skills />
-        <Service />
         <Process />
         <Testimonials />
         <Partners dark />
         <Contact />
-        <Blog />
+        {/* <Blog /> */}
         <Copyright />
         <Mouse />
         <ScrollTop />

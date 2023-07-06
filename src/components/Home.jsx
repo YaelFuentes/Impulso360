@@ -13,9 +13,9 @@ const homeData = {
 };
 
 const images = [
-  { src: '/imagenes/carousel/carousel1.jpg', alt: 'Image 1', height: '1080', width: '1920'},
-  { src: '/imagenes/carousel/carousel2.jpg', alt: 'Image 2', height: '1080', width: '1920'},
-  { src: '/imagenes/carousel/carousel3.jpg', alt: 'Image 3', height: '1080', width: '1920'},
+  { src: '/imagenes/carousel/carousel1.jpg', alt: 'Image 1'},
+  { src: '/imagenes/carousel/carousel2.jpg', alt: 'Image 2'},
+  { src: '/imagenes/carousel/carousel3.jpg', alt: 'Image 3'},
 ];
 
 const Home = () => {
