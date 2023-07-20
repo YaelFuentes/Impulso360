@@ -41,7 +41,7 @@ const Index = () => {
         <Service />
         <About />
         {/* <CounterSection /> */}
-        <Portfolio />
+        {/* <Portfolio /> */}
         <Skills />
         <Process />
         <Testimonials />

@@ -7,7 +7,6 @@ const ServicePopup = ({ data, open, close }) => {
     <Popup open={open} close={close}>
       <div className="service_popup_informations">
         <div className="image">
-          {/* <img src="img/thumbs/4-2.jpg" alt="" /> */}
           <Player
             autoplay
             loop
@@ -17,11 +16,6 @@ const ServicePopup = ({ data, open, close }) => {
             src={data.img}
             className='h-48 w-52 object-none'
           />
-          {/* <div
-            className="main"
-            data-img-url={data.img}
-            style={{ backgroundImage: `url(${data.img})` }}
-          /> */}
         </div>
         <div className="main_title">
           <div className="text-white text-4xl text-center py-4">{data.name}</div>
