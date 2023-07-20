@@ -11,35 +11,35 @@ const homeData = {
   numberofyear: 2,
 };
 
+const images = [
+  { src: '/imagenes/carousel/carousel1.jpg', alt: 'Image 1' },
+  { src: '/imagenes/carousel/carousel2.jpg', alt: 'Image 2' },
+  { src: '/imagenes/carousel/carousel3.jpg', alt: 'Image 3' },
+];
+
 const Home = () => {
   return (
     <div className="devman_tm_section" id="home">
       <div className="devman_tm_hero">
         <div className="background">
-          <div className="image" data-img-url="img/hero/1_1.png" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', opacity: 0.5, }} />
+          <CarouselComponent images={images} />
         </div>
         <div className="container">
           <div className="content">
             <div className="left">
               <div className="inner">
-                <h3 className="hello">Hola, te presentamos</h3>
+                <h3 className="hello">Te presentamos</h3>
                 <h3 className="name">
-                  {homeData.firstName} {/* {homeData.lastName} */}
+                  {homeData.firstName}
                 </h3>
                 <h3 className="job">
-                  {/* {homeData.designation} from {homeData.address} */}
-                  Una nueva forma de impulsar tu negocio digitals
+                  Una nueva forma de impulsar tu negocio digital
                 </h3>
                 <p className="text">{homeData.bio}</p>
                 <div className="buttons">
                   <div className="devman_tm_button">
-                    <a className="anchor" href="#contact">
+                    <a className="anchor" href="#service">
                       Saber mas
-                    </a>
-                  </div>
-                  <div className="simple_button">
-                    <a className="anchor" href="#about">
-                      Sobre Nosotros
                     </a>
                   </div>
                 </div>
@@ -64,9 +64,6 @@ const Home = () => {
                   <div className="main" data-img-url={homeData.fb} />
                   </div>
                 </div>
-                {/*  <span className="circle anim_circle">
-                  <img src="img/hero/circle.png" alt="" />
-  </span> */}
               </div>
             </div>
           </div>
@@ -76,3 +73,4 @@ const Home = () => {
   );
 };
 export default Home;
+

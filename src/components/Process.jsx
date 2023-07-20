@@ -8,11 +8,10 @@ const Process = () => {
           <div className="process_inner">
             <div className="left">
               <div className="devman_tm_main_title" data-text-align="left">
-                <span>Working to make difference</span>
-                <h3>Real Passion to Create Amazing Things</h3>
+                <span>Trabajando para hacer la diferencia</span>
+                <h3>Preguntas Frecuentes</h3>
                 <p>
-                  Dliquip ex ea commo do conse namber onequa ute irure dolor in
-                  reprehen derit in voluptate
+                Encuentra respuestas detalladas a las preguntas más frecuentes sobre nuestros servicios de desarrollo web y sistemas a medida para pequeñas y medianas empresas
                 </p>
               </div>
             </div>

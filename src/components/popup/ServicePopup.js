@@ -1,19 +1,24 @@
 import Popup from "./Popup";
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+
 
 const ServicePopup = ({ data, open, close }) => {
   return (
     <Popup open={open} close={close}>
       <div className="service_popup_informations">
         <div className="image">
-          <img src="img/thumbs/4-2.jpg" alt="" />
-          <div
-            className="main"
-            data-img-url={data.img}
-            style={{ backgroundImage: `url(${data.img})` }}
+          <Player
+            autoplay
+            loop
+            priority
+            sizes='(max-width:768px) 100vw,
+              (max-width:1200px) 50vm, 50vw'
+            src={data.img}
+            className='h-48 w-52 object-none'
           />
         </div>
         <div className="main_title">
-          <h3>{data.name}</h3>
+          <div className="text-white text-4xl text-center py-4">{data.name}</div>
         </div>
         <div className="descriptions">
           {data &&

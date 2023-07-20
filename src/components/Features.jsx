@@ -10,7 +10,7 @@ const features_list = [
       text: "Luego se comenzara a trabajar en la idea principal de la estrategia integral. Esto incluye modelo de mercado, diseño grafico y redes sociales.",
     },
     {
-      title: "Armado de herramientas en linea",
+      title: "Armado de herramientas online",
       icon: "img/svg/landing.svg",
       text: "Teniendo acordada la identidad visual de tu marca comenzaremos a plasmarla en tu nuevo sitio web y redes sociales de la mano de nuestros diseñadores y analistas.",
     },
@@ -26,6 +26,11 @@ const features_list = [
         <div className="devman_tm_features">
           <div className="container">
             <div className="features_list">
+              <div className="text-4xl font-bold items-center justify-center flex flex-col mb-10">
+                <h3>
+                  Como trabajamos
+                </h3>
+              </div>
               <ul>
                 {features_list.map((feature, i) => (
                   <li

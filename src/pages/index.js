@@ -19,7 +19,7 @@ import Layout from "../layouts/Layout";
 import MobileHeader from "../layouts/MobileHeader";
 import Mouse from "../layouts/Mouse";
 import ScrollTop from "../layouts/ScrollTop";
-import HomePage from "./home";
+/* import HomePage from "./home"; */
 const Testimonials = dynamic(() => import("../components/Testimonials"), {
   ssr: false,
 });
@@ -31,29 +31,29 @@ const Index = () => {
   return (
     <>
       <Layout>
-      <Head>
-        <title>Devman | Home</title>
-      </Head>
-      <MobileHeader />
-      <Header />
-      <Home />
-      <Features />
-      <About />
-      {/* <CounterSection /> */}
-      <Portfolio />
-      <Skills />
-      <Service />
-      <Process /> 
-      <Testimonials />
-      <Partners dark />
-      <Contact />
-      <Blog />
-      <Copyright />
-      <Mouse />
-      <ScrollTop />
-    </Layout>
+        <Head>
+          <title>Impulso360</title>
+        </Head>
+        <MobileHeader />
+        <Header />
+        <Home />
+        <Features />
+        <Service />
+        <About />
+        {/* <CounterSection /> */}
+        {/* <Portfolio /> */}
+        <Skills />
+        <Process />
+        <Testimonials />
+        <Partners dark />
+        <Contact />
+        {/* <Blog /> */}
+        <Copyright />
+        <Mouse />
+        <ScrollTop />
+      </Layout>
     </>
-    
+
   );
 };
 export default Index;

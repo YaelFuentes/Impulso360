@@ -1,7 +1,7 @@
 @charset "utf-8";
 body.dark{
-	background-color: #252439;
-	color: #aaaaba;
+	background-color: #ffffff;
+	color: #000000;
 }
 body.dark ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #a29fac;
@@ -28,7 +28,7 @@ body.dark::-webkit-scrollbar {
 }
 body.dark{
   scrollbar-width: thin;
-  scrollbar-color: #777 #2b2d33;
+  scrollbar-color: #2b2b2b #09090a;
 }
 body.dark:-webkit-scrollbar-track {
   background: #2b2d33;
@@ -39,7 +39,7 @@ body.dark::-webkit-scrollbar-thumb {
   border: 3px solid #2b2d33;
 }
 body.dark h1,body.dark h2,body.dark h3,body.dark h4,body.dark h5,body.dark h6{
-	color: #fff;
+	color: #000000;
 }
 
 body.dark .devman_tm_modalbox .description_wrap{
@@ -67,16 +67,16 @@ body.dark .devman_tm_features .features_list ul li .short:before{
 	background-color: rgba(202,205,211,.24);
 }
 body.dark .progress_inner span.label{
-	color: #fff;
+	color: #000000;
 }
 body.dark .devman_tm_accordion .acc_head p{
-	color: #fff;
+	color: #000000;
 }
 body.dark .devman_tm_accordion .plus:after{
-	background-color: #fff;
+	background-color: #000000;
 }
 body.dark .devman_tm_accordion .plus:before{
-	background-color: #fff;
+	background-color: #000000;
 }
 body.dark .devman_tm_testimonials .swiper .swiper-slide .list_inner{
 	background-color: #444359;
@@ -98,17 +98,17 @@ body.dark .devman_tm_partners .swiper .swiper-slide{
 	border-color: #595a6b;
 }
 body.dark .devman_tm_news .details .title a{
-	color: #fff;
+	color: #000000;
 }
 body.dark .devman_tm_news .details .title a:hover{
 	color: var(--main-color);
 }
 body.dark .devman_tm_header.animate{
-	background-color: #252439;
+	background-color: #ffffff;
 	box-shadow: 0px 0px 10px rgb(255 255 255 / 10%);
 }
 body.dark .devman_tm_header.animate .menu ul li a{
-	color: #fff;
+	color: #000000;
 }
 body.dark .devman_tm_header.animate .menu ul li.current a{
 	color: var(--main-color);
@@ -123,7 +123,7 @@ body.dark .devman_tm_header.animate .logo .dark{
 	display: none;
 }
 body.dark .progress_inner span.number{
-	color: #fff;
+	color: #000000;
 }
 body.dark .devman_tm_modalbox .portfolio_main_title span a{
 	color: #aaaaba;
@@ -144,25 +144,25 @@ body.dark .devman_tm_contact .fields .last textarea{
 	color: #a29fac;
 }
 body.dark .devman_tm_mobile_menu .mobile_menu_inner{
-	background-color: #252439;
+	background-color: #fafafa;
 }
 body.dark .hamburger-inner, body.dark .hamburger-inner:after, body.dark .hamburger-inner:before{
-	background-color: #fff;
+	background-color: #000000;
 }
 body.dark .hamburger.is-active .hamburger-inner, body.dark .hamburger.is-active .hamburger-inner:after, body.dark .hamburger.is-active .hamburger-inner:before{
-	background-color: #fff;
+	background-color: #000000;
 }
 body.dark .devman_tm_mobile_menu .dropdown{
-	background-color: #252439;
+	background-color: #ffffff;
 }
 body.dark .devman_tm_mobile_menu .dropdown .dropdown_inner ul li a{
-	color: #fff;
+	color: #000000;
 }
 body.dark .progressbar a{
-	color: #fff;
+	color: #000000;
 }
 body.dark .progressbar .line{
-	background-color: rgba(255,255,255,.4);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 body.dark .progressbar{
 	background-color: rgba(25,255,255,.08);

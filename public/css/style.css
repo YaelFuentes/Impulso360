@@ -34,7 +34,7 @@ a {
   text-decoration: none;
 }
 :root {
-  --main-color: #fb503b;
+  --main-color: #007c9d;
   --font-family-main: "Open Sans", sans-serif;
   --font-family-extra: "Barlow", sans-serif;
 }
@@ -52,7 +52,7 @@ body {
   letter-spacing: 0px;
   word-wrap: break-word;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #000000;
   color: #54545f;
 }
 
@@ -284,7 +284,7 @@ h6 {
 }
 .devman_tm_section {
   width: 100%;
-  height: auto;
+  height: 10% !important;
   clear: both;
   float: left;
 }
@@ -348,7 +348,8 @@ h6 {
 }
 .devman_tm_mobile_menu .dropdown .dropdown_inner ul li {
   margin: 0px;
-  float: left;
+  text-align: center;
+  margin-bottom: 10px;
   width: 100%;
 }
 .devman_tm_mobile_menu .dropdown .dropdown_inner ul li a {
@@ -440,7 +441,7 @@ h6 {
   margin-right: 0px;
 }
 .devman_tm_header .menu ul li a {
-  color: #fff;
+  color: #ffffff;
   font-family: var(--font-family-extra);
   display: block;
   font-weight: 600;
@@ -526,23 +527,23 @@ h6 {
   z-index: 2;
 }
 .devman_tm_hero .hello {
-  color: #fff;
+  color: #ffffff;
   font-size: 35px;
   margin-bottom: 3px;
 }
 .devman_tm_hero .name {
-  color: #fff;
+  color: #ffffff;
   font-size: 77px;
   line-height: 1.1;
   margin-bottom: 24px;
 }
 .devman_tm_hero .job {
-  color: #fff;
+  color: #dbdbdb;
   font-size: 26px;
   margin-bottom: 33px;
 }
 .devman_tm_hero .text {
-  color: #fff;
+  color: #dbdbdb;
   font-size: 21px;
   margin-bottom: 40px;
 }
@@ -588,7 +589,7 @@ h6 {
   margin-left: 50px;
 }
 .devman_tm_hero .simple_button a {
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   font-size: 18px;
   font-weight: 600;
@@ -1816,6 +1817,7 @@ h6 {
 }
 .devman_tm_modalbox .service_popup_informations .descriptions p {
   margin-bottom: 15px;
+  color: white;
 }
 .devman_tm_modalbox .service_popup_informations .descriptions p:last-child {
   margin-bottom: 0px;
@@ -3176,8 +3178,9 @@ h6 {
   .devman_tm_modalbox .description_wrap:after {
     height: 35px;
   }
-  .devman_tm_modalbox .service_popup_informations .main_title h3 {
+  .devman_tm_modalbox .service_popup_informations .main_title {
     font-size: 22px;
+    color: white; 
   }
   .devman_tm_modalbox .news_popup_informations .details h3 {
     font-size: 22px;

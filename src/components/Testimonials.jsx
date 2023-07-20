@@ -5,7 +5,7 @@ import { dataImage } from "../utilits";
 const Testimonials = () => {
   useEffect(() => {
     dataImage();
-/*     imgToSVG(); */
+    /* imgToSVG(); */
   }, []);
 
   return (
@@ -13,11 +13,10 @@ const Testimonials = () => {
       <div className="devman_tm_testimonials">
         <div className="container">
           <div className="devman_tm_main_title" data-text-align="center">
-            <span>Testimonial</span>
-            <h3>What Clients Say</h3>
+            <span>Testimonios</span>
+            <h3>¿Que dicen nuestros clientes?</h3>
             <p>
-              Dliquip ex ea commo do conse namber onequa ute irure dolor in
-              reprehen derit in voluptate
+              Descubre lo que nuestros clientes satisfechos dicen sobre nuestra excelencia
             </p>
           </div>
           <div
@@ -32,19 +31,20 @@ const Testimonials = () => {
                 <div className="list_inner">
                   <img className="svg" src="img/svg/quote.svg" alt="" />
                   <p className="text">
-                    Duis aute irure dolor in repre hen derit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+                    Cumplieron con todos los plazos informados y fueron muy predispuestos con nuestra organización. 
+                    Transformaron nuestra presencia digital y nos han ayudado a crecer exponencialmente. 
+                    Tienen un equipo muy profesional y dedicado, los recomiendo 100%
                   </p>
                   <div className="details">
-                    <div className="image">
+                    {/* <div className="image">
                       <div
                         className="main"
                         data-img-url="img/testimonials/1.jpg"
                       />
-                    </div>
+                    </div> */}
                     <div className="short">
-                      <h3>Selena Brook</h3>
-                      <span>ABC Studio</span>
+                      <h3>Ignacio Roldán</h3>
+                      <span>Casa Coraje</span>
                     </div>
                   </div>
                 </div>
@@ -53,19 +53,20 @@ const Testimonials = () => {
                 <div className="list_inner">
                   <img className="svg" src="img/svg/quote.svg" alt="" />
                   <p className="text">
-                    Duis aute irure dolor in repre hen derit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+                  Desde el momento en que contratamos a esta empresa para digitalizar nuestro negocio, hemos visto buenos resultados. 
+                  Su capacidad para diseñar una página web atractiva y funcional, junto con sus estrategias de marketing personalizada, 
+                  han sido fundamentales para nuestro éxito en línea.
                   </p>
                   <div className="details">
-                    <div className="image">
+                    {/* <div className="image">
                       <div
                         className="main"
                         data-img-url="img/testimonials/3.jpg"
                       />
-                    </div>
+                    </div> */}
                     <div className="short">
-                      <h3>David Parker</h3>
-                      <span>Designer</span>
+                      <h3>Daniel Araya</h3>
+                      <span>Black Group</span>
                     </div>
                   </div>
                 </div>
@@ -74,19 +75,20 @@ const Testimonials = () => {
                 <div className="list_inner">
                   <img className="svg" src="img/svg/quote.svg" alt="" />
                   <p className="text">
-                    Duis aute irure dolor in repre hen derit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+                  Esta empresa ha superado nuestras expectativas en todos los aspectos. 
+                  Su equipo de diseñadores gráficos ha creado una identidad visual atractiva para nuestra marca. 
+                  Estamos muy conformes con los resultados y no dudaremos en recomendarlos a otras empresas.
                   </p>
                   <div className="details">
-                    <div className="image">
+                    {/* <div className="image">
                       <div
                         className="main"
                         data-img-url="img/testimonials/4.jpg"
                       />
-                    </div>
+                    </div> */}
                     <div className="short">
-                      <h3>Jessica Smith</h3>
-                      <span>Vivaco Group</span>
+                      <h3>Carolina Riquelme</h3>
+                      <span>Zendit</span>
                     </div>
                   </div>
                 </div>
@@ -95,19 +97,20 @@ const Testimonials = () => {
                 <div className="list_inner">
                   <img className="svg" src="img/svg/quote.svg" alt="" />
                   <p className="text">
-                    Duis aute irure dolor in repre hen derit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+                  Hemos trabajado con varias agencias de marketing en el pasado, 
+                  pero ninguna se compara con el nivel de profesionalismo y habilidad que hemos experimentado con ellos. 
+                  Su enfoque nos ha permitido alcanzar resultados extraordinarios. Los recomendaré a todos mis contactos.
                   </p>
                   <div className="details">
-                    <div className="image">
+                    {/* <div className="image">
                       <div
                         className="main"
                         data-img-url="img/testimonials/5.jpg"
                       />
-                    </div>
+                    </div> */}
                     <div className="short">
-                      <h3>Collin Mattew</h3>
-                      <span>Photographer</span>
+                      <h3>Rodrigo Sandoval</h3>
+                      <span>Welivery</span>
                     </div>
                   </div>
                 </div>
