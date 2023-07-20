@@ -1,5 +1,6 @@
 /* import Counter from "./Counter"; */
 import ImgBackground from '../../public/img/hero/background.png'
+import CarouselComponent from './Animations/Carrousel';
 
 const homeData = {
   firstName: "Impulso360",
