@@ -117,14 +117,14 @@ const Service = () => {
         Servicios que ofrecemos
       </h2>
       <div className="devman_tm_service" id="service">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:mr-24 lg:ml-24 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:mr-24 lg:ml-24 text-center">
           {serviceData.map((service, i) => (
             <>
-              <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+              <figure className="relative max-w-sm transition-all duration-300 brightness-50 cursor-pointer filter grayscale hover:grayscale-0 ">
                 <a onClick={() => openPopup(service)}>
-                  <img class="rounded-lg w-full h-96 object-cover" src={service.backgroundImage} alt="image description" />
+                  <img className="rounded-lg w-full h-96 object-cover hover:brightness-50" src={service.backgroundImage} alt="image description" />
                 </a>
-                <figcaption class="absolute px-4 text-lg text-gray-800 bottom-6 text-center font-medium bg-black bg-opacity-40 backdrop-blur-lg p-2 rounded-lg shadow-lg">
+                <figcaption className="absolute px-4 text-xl text-gray-800 bottom-6 text-center font-extrabold bg-black bg-opacity-40 backdrop-blur-lg p-2 rounded-lg shadow-lg">
                   <p>{service.name}</p>
                 </figcaption>
               </figure>

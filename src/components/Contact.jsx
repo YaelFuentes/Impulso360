@@ -49,7 +49,7 @@ const Contact = () => {
           <div className="contact_inner">
             <div className="devman_tm_main_title" data-text-align="left">
               <span>{`Don't`} be shy</span>
-              <h3>Drop Me a Line</h3>
+              <h3>Contactanos</h3>
             </div>
             <div className="in">
               <div className="left wow fadeInLeft" data-wow-duration="1s">
@@ -83,7 +83,7 @@ const Contact = () => {
                             onChange={(e) => onChange(e)}
                             value={name}
                             type="text"
-                            placeholder="Name"
+                            placeholder="Nombre"
                           />
                         </li>
                         <li>
@@ -101,7 +101,7 @@ const Contact = () => {
                     <div className="last">
                       <textarea
                         id="message"
-                        placeholder="Message"
+                        placeholder="Mensaje"
                         name="message"
                         onChange={(e) => onChange(e)}
                         value={message}
@@ -117,7 +117,7 @@ const Contact = () => {
               <div className="right wow fadeInRight" data-wow-duration="1s">
                 <ul>
                   <li>
-                    <div className="list_inner">
+                    {/* <div className="list_inner">
                       <div className="icon">
                         <i className="icon-location orangeText" />
                       </div>
@@ -125,7 +125,7 @@ const Contact = () => {
                         <h3>Address</h3>
                         <span>20, Somewhere in world</span>
                       </div>
-                    </div>
+                    </div> */}
                   </li>
                   <li>
                     <div className="list_inner">
@@ -146,8 +146,8 @@ const Contact = () => {
                         <i className="icon-phone purpleText" />
                       </div>
                       <div className="short">
-                        <h3>Phone</h3>
-                        <span>+123 456 7890</span>
+                        <h3>Telefono</h3>
+                        <span>+56 9 9589 9154</span>
                       </div>
                     </div>
                   </li>
