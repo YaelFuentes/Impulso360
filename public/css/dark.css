@@ -67,7 +67,7 @@ body.dark .devman_tm_features .features_list ul li .short:before{
 	background-color: rgba(202,205,211,.24);
 }
 body.dark .progress_inner span.label{
-	color: #fff;
+	color: #000000;
 }
 body.dark .devman_tm_accordion .acc_head p{
 	color: #000000;

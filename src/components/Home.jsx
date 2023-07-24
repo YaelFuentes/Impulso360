@@ -1,5 +1,3 @@
-import { Player, Controls } from '@lottiefiles/react-lottie-player';
-import LottiePlayer from './Animations/Home';
 import CarouselComponent from './Animations/Carrousel';
 
 const homeData = {
@@ -13,9 +11,9 @@ const homeData = {
 };
 
 const images = [
-  { src: '/imagenes/carousel/carousel1.jpg', alt: 'Image 1'},
-  { src: '/imagenes/carousel/carousel2.jpg', alt: 'Image 2'},
-  { src: '/imagenes/carousel/carousel3.jpg', alt: 'Image 3'},
+  { src: '/imagenes/carousel/carousel1.jpg', alt: 'Image 1' },
+  { src: '/imagenes/carousel/carousel2.jpg', alt: 'Image 2' },
+  { src: '/imagenes/carousel/carousel3.jpg', alt: 'Image 3' },
 ];
 
 const Home = () => {
@@ -23,40 +21,46 @@ const Home = () => {
     <div className="devman_tm_section" id="home">
       <div className="devman_tm_hero">
         <div className="background">
-        <CarouselComponent images={images}/>
-        </div> 
+          <CarouselComponent images={images} />
+        </div>
         <div className="container">
           <div className="content">
-          
             <div className="left">
               <div className="inner">
-                <h3 className="hello">Hola, te presentamos</h3>
+                <h3 className="hello">Te presentamos</h3>
                 <h3 className="name">
                   {homeData.firstName} {/* {homeData.lastName} */}
                 </h3>
                 <h3 className="job">
                   {/* {homeData.designation} from {homeData.address} */}
-                  Una nueva forma de impulsar tu negocio digitals
+                  Una nueva forma de impulsar tu negocio digital
                 </h3>
                 <p className="text">{homeData.bio}</p>
                 <div className="buttons">
                   <div className="devman_tm_button">
-                    <a className="anchor" href="#contact">
+                    <a className="anchor" href="#service">
                       Saber mas
                     </a>
                   </div>
-                  <div className="simple_button">
+                  {/* <div className="simple_button">
                     <a className="anchor" href="#about">
                       Sobre Nosotros
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <h3 className="stroke_1">{homeData.firstName}</h3>
               <h3 className="stroke_2">{homeData.lastName}</h3>
             </div>
             <div className="right">
-              {/* <LottiePlayer/> */}
+              {/* Aquí se agrega el formulario de contacto */}
+              <form className="contact-form bg-transparent">
+                <h3 className="mb-4 text-white md:text-white text-center text-xl font-bold">Contáctanos</h3>
+                <input className="w-full mb-4 p-2 rounded-md" type="text" placeholder="Nombre" />
+                <input className="w-full mb-4 p-2 rounded-md" type="email" placeholder="Correo electrónico" />
+                <textarea className="w-full mb-4 p-2 rounded-md" placeholder="Mensaje"></textarea>
+                <button className="w-full bg-blue hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-md" type="submit">Enviar</button>
+              </form>
             </div>
           </div>
         </div>

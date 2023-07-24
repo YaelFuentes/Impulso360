@@ -54,7 +54,7 @@ export default function CarouselComponent({ images }) {
             return (
               <div
                 key={index}
-                className={`w-full h-full absolute transition-all duration-500 
+                className={`w-full h-full absolute transition-all duration-500 brightness-40
                 ${isZoomedSlide ? "scale-120" : "scale-100"
                   }`}
                 style={{
