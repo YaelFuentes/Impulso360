@@ -79,11 +79,14 @@ body.dark .devman_tm_accordion .plus:before{
 	background-color: #000000;
 }
 body.dark .devman_tm_testimonials .swiper .swiper-slide .list_inner{
-	background-color: #444359;
+	background-color: #007C9D;
 	box-shadow: none;
 }
 body.dark .devman_tm_testimonials .swiper .swiper-slide .text{
 	color: #aaaaba;
+}
+body.dark .devman_tm_testimonials .swiper .swiper-slide .textTestimonial {
+	color:white
 }
 body.dark .devman_tm_testimonials .owl-theme .owl-dots .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	background-color: #fff;

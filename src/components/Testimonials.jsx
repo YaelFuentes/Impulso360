@@ -30,7 +30,7 @@ const Testimonials = () => {
               <SwiperSlide>
                 <div className="list_inner">
                   <img className="svg" src="img/svg/quote.svg" alt="" />
-                  <p className="text">
+                  <p className="textTestimonial">
                     Cumplieron con todos los plazos informados y fueron muy predispuestos con nuestra organización. 
                     Transformaron nuestra presencia digital y nos han ayudado a crecer exponencialmente. 
                     Tienen un equipo muy profesional y dedicado, los recomiendo 100%
@@ -52,7 +52,7 @@ const Testimonials = () => {
               <SwiperSlide>
                 <div className="list_inner">
                   <img className="svg" src="img/svg/quote.svg" alt="" />
-                  <p className="text">
+                  <p className="textTestimonial">
                   Desde el momento en que contratamos a esta empresa para digitalizar nuestro negocio, hemos visto buenos resultados. 
                   Su capacidad para diseñar una página web atractiva y funcional, junto con sus estrategias de marketing personalizada, 
                   han sido fundamentales para nuestro éxito en línea.
@@ -74,7 +74,7 @@ const Testimonials = () => {
               <SwiperSlide>
                 <div className="list_inner">
                   <img className="svg" src="img/svg/quote.svg" alt="" />
-                  <p className="text">
+                  <p className="textTestimonial">
                   Esta empresa ha superado nuestras expectativas en todos los aspectos. 
                   Su equipo de diseñadores gráficos ha creado una identidad visual atractiva para nuestra marca. 
                   Estamos muy conformes con los resultados y no dudaremos en recomendarlos a otras empresas.
@@ -96,7 +96,7 @@ const Testimonials = () => {
               <SwiperSlide>
                 <div className="list_inner">
                   <img className="svg" src="img/svg/quote.svg" alt="" />
-                  <p className="text">
+                  <p className="textTestimonial">
                   Hemos trabajado con varias agencias de marketing en el pasado, 
                   pero ninguna se compara con el nivel de profesionalismo y habilidad que hemos experimentado con ellos. 
                   Su enfoque nos ha permitido alcanzar resultados extraordinarios. Los recomendaré a todos mis contactos.

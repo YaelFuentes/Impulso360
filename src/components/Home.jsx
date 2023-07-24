@@ -1,11 +1,11 @@
 import CarouselComponent from './Animations/Carrousel';
 
 const homeData = {
-  firstName: "Impulso360",
+  firstName: "Impulsa tu pyme o empresa al siguiente nivel",
   img: "img/hero/2.jpg",
   imgIg: "imagenes/redes/instagram.png",
   fb: "imagenes/redes/fb.png",
-  bio: "Para pymes y empresas que deseen iniciar una transformacion y evolucion digital",
+  bio: "Potenciá tu presencia digital atrayendo clientes de forma masiva, agenda tu reunión 100% gratuita",
   numberOfProject: 30,
   numberofyear: 2,
 };
@@ -27,7 +27,7 @@ const Home = () => {
           <div className="content">
             <div className="left">
               <div className="inner">
-                <h3 className="hello">Te presentamos</h3>
+                <p >SOCIAL MEDIA | PAID MEDIA | SEO | DESARROLLO WEB | MARKETING DE CONTENIDO | VENTAS</p>
                 <h3 className="name">
                   {homeData.firstName} {/* {homeData.lastName} */}
                 </h3>
@@ -58,6 +58,7 @@ const Home = () => {
                 <h3 className="mb-4 text-white md:text-white text-center text-xl font-bold">Contáctanos</h3>
                 <input className="w-full mb-4 p-2 rounded-md" type="text" placeholder="Nombre" />
                 <input className="w-full mb-4 p-2 rounded-md" type="email" placeholder="Correo electrónico" />
+                <input className="w-full mb-4 p-2 rounded-md" type="email" placeholder="Telefono de contacto" />
                 <textarea className="w-full mb-4 p-2 rounded-md" placeholder="Mensaje"></textarea>
                 <button className="w-full bg-blue hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-md" type="submit">Enviar</button>
               </form>
