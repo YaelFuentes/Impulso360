@@ -2145,7 +2145,7 @@ h6 {
   overflow: hidden;
 }
 .devman_tm_partners ul li img {
-  max-width: 33%;
+  max-width: 100%;
   max-height: 100px;
 }
 .devman_tm_partners ul li .list_inner {
