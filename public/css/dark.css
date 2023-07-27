@@ -85,6 +85,12 @@ body.dark .devman_tm_testimonials .swiper .swiper-slide .list_inner{
 body.dark .devman_tm_testimonials .swiper .swiper-slide .text{
 	color: #000000;
 }
+body.dark .devman_tm_testimonials .swiper .swiper-slide .textTestimonial {
+	color:white
+}
+body.dark .devman_tm_testimonials .swiper .swiper-slide .textTestimonial {
+	color:white
+}
 body.dark .devman_tm_testimonials .owl-theme .owl-dots .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	background-color: #fff;
 }

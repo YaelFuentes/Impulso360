@@ -37,12 +37,12 @@ const Skills = () => {
                 </div>
                 <div
                   className="skillsInner___ progress_inner"
-                  data-value={88}
+                  data-value={95}
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Identidad visual</span>
-                    <span className="number">88%</span>
+                    <span className="label">Evolucion tecnologica</span>
+                    <span className="number">95%</span>
                   </span>
                   <div className="background">
                     <div className="bar">
@@ -52,12 +52,12 @@ const Skills = () => {
                 </div>
                 <div
                   className="skillsInner___ progress_inner"
-                  data-value={84}
+                  data-value={98}
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Redes sociales</span>
-                    <span className="number">84%</span>
+                    <span className="label">Exceso de informacion y saturacion</span>
+                    <span className="number">98%</span>
                   </span>
                   <div className="background">
                     <div className="bar">
@@ -71,12 +71,12 @@ const Skills = () => {
               <div className="dodo_progress">
                 <div
                   className="skillsInner___ progress_inner"
-                  data-value={91}
+                  data-value={92}
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Alcance</span>
-                    <span className="number">91%</span>
+                    <span className="label">Poca medicion y analisis de datos</span>
+                    <span className="number">92%</span>
                   </span>
                   <div className="background">
                     <div className="bar">
@@ -86,12 +86,12 @@ const Skills = () => {
                 </div>
                 <div
                   className="skillsInner___ progress_inner"
-                  data-value={83}
+                  data-value={90}
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Sin pagina web</span>
-                    <span className="number">83%</span>
+                    <span className="label">Experiencia de usuario deficiente</span>
+                    <span className="number">90%</span>
                   </span>
                   <div className="background">
                     <div className="bar">
@@ -101,12 +101,12 @@ const Skills = () => {
                 </div>
                 <div
                   className="skillsInner___ progress_inner"
-                  data-value={94}
+                  data-value={96}
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Falta de planificacion</span>
-                    <span className="number">94%</span>
+                    <span className="label">Falta de atencion publico objetivo</span>
+                    <span className="number">96%</span>
                   </span>
                   <div className="background">
                     <div className="bar">
