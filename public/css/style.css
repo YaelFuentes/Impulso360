@@ -528,7 +528,7 @@ h6 {
 }
 .devman_tm_hero .hello {
   color: #ffffff;
-  font-size: 35px;
+  font-size: 15px;
   margin-bottom: 3px;
 }
 .devman_tm_hero .name {
@@ -1977,7 +1977,7 @@ h6 {
   position: relative;
   border-radius: 10px;
   padding: 65px 50px;
-  box-shadow: 18px 0px 87px rgba(10, 15, 70, 0.07);
+  box-shadow: 18px 0px 87px rgba(98, 99, 112, 0.07);
   background-color: #fff;
 }
 .devman_tm_testimonials .swiper .swiper-slide .svg {
@@ -1988,7 +1988,7 @@ h6 {
 }
 .devman_tm_testimonials .swiper .swiper-slide .text {
   font-size: 24px;
-  color: #54545f;
+  color: #000000;
   font-style: italic;
   line-height: 1.5;
   margin-bottom: 40px;
@@ -2026,7 +2026,7 @@ h6 {
 }
 .devman_tm_testimonials .swiper .swiper-slide .details .short span {
   font-size: 16px;
-  color: #a29fac;
+  color: #000000;
 }
 .devman_tm_testimonials .owl-carousel .owl-stage-outer {
   overflow: visible;
@@ -2891,7 +2891,7 @@ h6 {
     max-width: 150px;
   }
   .devman_tm_hero .hello {
-    font-size: 30px;
+    font-size: 15px;
     margin-bottom: 0px;
   }
   .devman_tm_hero .name {

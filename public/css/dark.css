@@ -79,11 +79,11 @@ body.dark .devman_tm_accordion .plus:before{
 	background-color: #000000;
 }
 body.dark .devman_tm_testimonials .swiper .swiper-slide .list_inner{
-	background-color: #444359;
+	background-color: #00c9ff;
 	box-shadow: none;
 }
 body.dark .devman_tm_testimonials .swiper .swiper-slide .text{
-	color: #aaaaba;
+	color: #000000;
 }
 body.dark .devman_tm_testimonials .owl-theme .owl-dots .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	background-color: #fff;

@@ -48,7 +48,7 @@ const Contact = () => {
         <div className="container">
           <div className="contact_inner">
             <div className="devman_tm_main_title" data-text-align="left">
-              <span>{`Don't`} be shy</span>
+              <span>Habla con nosotros</span>
               <h3>Contactanos</h3>
             </div>
             <div className="in">
@@ -96,6 +96,16 @@ const Contact = () => {
                             placeholder="Email"
                           />
                         </li>
+                        <li>
+                          <input
+                            id="phone"
+                            type="phone"
+                            name="phone"
+                            onChange={(e) => onChange(e)}
+                            value={email}
+                            placeholder="Telefono"
+                          />
+                        </li>
                       </ul>
                     </div>
                     <div className="last">
@@ -108,7 +118,7 @@ const Contact = () => {
                       />
                     </div>
                     <div className="devman_tm_button" data-position="left">
-                      <input type="submit" value="Submit Message" />
+                      <input type="submit" value="Enviar consulta" />
                     </div>
                     {/* If you want to change mail address to yours, please open modal.php and go to line 4 */}
                   </form>
