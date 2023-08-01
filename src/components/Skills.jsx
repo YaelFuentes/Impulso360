@@ -41,7 +41,7 @@ const Skills = () => {
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Evolucion tecnologica</span>
+                    <span className="label">Ausencia de redes sociales</span>
                     <span className="number">95%</span>
                   </span>
                   <div className="background">
@@ -56,7 +56,7 @@ const Skills = () => {
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Exceso de informacion y saturacion</span>
+                    <span className="label">No poseen identidad visual</span>
                     <span className="number">98%</span>
                   </span>
                   <div className="background">
@@ -75,7 +75,7 @@ const Skills = () => {
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Poca medicion y analisis de datos</span>
+                    <span className="label">Poca Planificacion</span>
                     <span className="number">92%</span>
                   </span>
                   <div className="background">
@@ -90,7 +90,7 @@ const Skills = () => {
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Experiencia de usuario deficiente</span>
+                    <span className="label">No poseen paginas web</span>
                     <span className="number">90%</span>
                   </span>
                   <div className="background">
@@ -105,7 +105,7 @@ const Skills = () => {
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Falta de atencion publico objetivo</span>
+                    <span className="label">Tienen poco alcance</span>
                     <span className="number">96%</span>
                   </span>
                   <div className="background">

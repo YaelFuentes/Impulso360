@@ -818,7 +818,7 @@ h6 {
   color: var(--main-color);
   font-size: 16px;
   font-weight: 600;
-  font-family: var(--font-family-extra);
+  /* font-family: var(--font-family-extra); */
   margin-bottom: 5px;
 }
 .devman_tm_features .features_list ul li .short h3 {
@@ -831,6 +831,7 @@ h6 {
 .devman_tm_features .features_list ul li .text {
   width: 100%;
   float: left;
+  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 /*---------------------------------------------------*/
@@ -1602,7 +1603,7 @@ h6 {
   background-color: #6e7fd1;
 }
 .devman_tm_service .service_list ul li:nth-child(2) .list_inner {
-  background-color: #343c55;
+  background-color: #002697;
 }
 .devman_tm_service .service_list ul li:nth-child(3) .list_inner {
   background-color: #142eb5;
@@ -1804,7 +1805,7 @@ h6 {
 .devman_tm_modalbox .service_popup_informations .main_title span {
   font-weight: 500;
   font-size: 21px;
-  color: #000;
+  color: #1012df;
   font-family: "Jost", sans-serif;
 }
 .devman_tm_modalbox .service_popup_informations .main_title span span {
@@ -1813,11 +1814,12 @@ h6 {
 }
 .devman_tm_modalbox .service_popup_informations .descriptions {
   width: 100%;
+  height: auto;
   float: left;
 }
 .devman_tm_modalbox .service_popup_informations .descriptions p {
-  margin-bottom: 15px;
-  color: white;
+  margin-bottom: 10px;
+  color: #1012df;
 }
 .devman_tm_modalbox .service_popup_informations .descriptions p:last-child {
   margin-bottom: 0px;

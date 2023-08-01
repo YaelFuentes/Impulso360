@@ -9,18 +9,18 @@ const Partners = ({ dark }) => {
           </div>
           <br />
           <br />
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div>
-              <img class="h-auto max-w-full rounded-lg" src="imagenes/empresas/black.png" alt="" />
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center">
+            <div class="flex justify-center items-center">
+              <img class="h-auto max-w-full max-h-24 md:max-h-32 rounded-lg" src="imagenes/empresas/black.png" alt="" />
             </div>
-            <div>
-              <img class="h-auto max-w-full rounded-lg" src="imagenes/empresas/casaCoraje.jpg" alt="" />
+            <div class="flex justify-center items-center">
+              <img class="h-auto max-w-full max-h-24 md:max-h-32 rounded-lg" src="imagenes/empresas/casaCoraje.jpg" alt="" />
             </div>
-            <div>
-              <img class="h-auto max-w-full rounded-lg" src="imagenes/empresas/partWelivery.jpg" alt="" />
+            <div class="flex justify-center items-center">
+              <img class="h-auto max-w-full max-h-24 md:max-h-32 rounded-lg" src="imagenes/empresas/partWelivery.jpg" alt="" />
             </div>
-            <div>
-              <img class="h-auto max-w-full rounded-lg" src="imagenes/empresas/zendit.png" alt="" />
+            <div class="flex justify-center items-center">
+              <img class="h-auto max-w-full max-h-24 md:max-h-32 rounded-lg" src="imagenes/empresas/zendit.png" alt="" />
             </div>
           </div>
         </div>

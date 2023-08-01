@@ -25,14 +25,15 @@ const Header = () => {
                 <a href="#home">Inicio</a>
               </li>
               <li>
+                <a href="#service">Servicios</a>
+              </li>
+              <li>
                 <a href="#about">Nosotros</a>
               </li>
               <li>
-                <a href="#portfolio">Proyectos</a>
+                <a href="#process">Preguntas frecuentes</a>
               </li>
-              <li>
-                <a href="#service">Servicios</a>
-              </li>
+              
               <li>
                 <a href="#contact">Contacto</a>
               </li>

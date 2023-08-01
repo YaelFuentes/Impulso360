@@ -31,19 +31,13 @@ const Testimonials = () => {
                 <div className="list_inner">
                   <img className="svg" src="img/svg/quote.svg" alt="" />
                   <p className="textTestimonial">
-                    Cumplieron con todos los plazos informados y fueron muy predispuestos con nuestra organización. 
-                    Transformaron nuestra presencia digital y nos han ayudado a crecer exponencialmente. 
+                    Cumplieron con todos los plazos informados y fueron muy predispuestos con nuestra organización.
+                    Transformaron nuestra presencia digital y nos han ayudado a crecer exponencialmente.
                     Tienen un equipo muy profesional y dedicado, los recomiendo 100%
                   </p>
                   <div className="details">
-                    {/* <div className="image">
-                      <div
-                        className="main"
-                        data-img-url="img/testimonials/1.jpg"
-                      />
-                    </div> */}
                     <div className="short">
-                      <h3>Ignacio Roldán</h3>
+                      <h3 className="mt-6">Ignacio Roldán</h3>
                       <span>Casa Coraje</span>
                     </div>
                   </div>
@@ -53,19 +47,13 @@ const Testimonials = () => {
                 <div className="list_inner">
                   <img className="svg" src="img/svg/quote.svg" alt="" />
                   <p className="textTestimonial">
-                  Desde el momento en que contratamos a esta empresa para digitalizar nuestro negocio, hemos visto buenos resultados. 
-                  Su capacidad para diseñar una página web atractiva y funcional, junto con sus estrategias de marketing personalizada, 
-                  han sido fundamentales para nuestro éxito en línea.
+                    Desde el momento en que contratamos a esta empresa para digitalizar nuestro negocio, hemos visto buenos resultados.
+                    Su capacidad para diseñar una página web atractiva y funcional, junto con sus estrategias de marketing personalizada,
+                    han sido fundamentales para nuestro éxito en línea.
                   </p>
                   <div className="details">
-                    {/* <div className="image">
-                      <div
-                        className="main"
-                        data-img-url="img/testimonials/3.jpg"
-                      />
-                    </div> */}
                     <div className="short">
-                      <h3>Daniel Araya</h3>
+                      <h3 className="xs:mt-5">Daniel Araya</h3>
                       <span>Black Group</span>
                     </div>
                   </div>
@@ -75,19 +63,13 @@ const Testimonials = () => {
                 <div className="list_inner">
                   <img className="svg" src="img/svg/quote.svg" alt="" />
                   <p className="textTestimonial">
-                  Esta empresa ha superado nuestras expectativas en todos los aspectos. 
-                  Su equipo de diseñadores gráficos ha creado una identidad visual atractiva para nuestra marca. 
-                  Estamos muy conformes con los resultados y no dudaremos en recomendarlos a otras empresas.
+                    Esta empresa ha superado nuestras expectativas en todos los aspectos.
+                    Su equipo de diseñadores gráficos ha creado una identidad visual atractiva para nuestra marca.
+                    Estamos muy conformes con los resultados y no dudaremos en recomendarlos a otras empresas.
                   </p>
                   <div className="details">
-                    {/* <div className="image">
-                      <div
-                        className="main"
-                        data-img-url="img/testimonials/4.jpg"
-                      />
-                    </div> */}
                     <div className="short">
-                      <h3>Carolina Riquelme</h3>
+                      <h3 className="md:mt-5">Carolina Riquelme</h3>
                       <span>Zendit</span>
                     </div>
                   </div>
@@ -97,19 +79,13 @@ const Testimonials = () => {
                 <div className="list_inner">
                   <img className="svg" src="img/svg/quote.svg" alt="" />
                   <p className="textTestimonial">
-                  Hemos trabajado con varias agencias de marketing en el pasado, 
-                  pero ninguna se compara con el nivel de profesionalismo y habilidad que hemos experimentado con ellos. 
-                  Su enfoque nos ha permitido alcanzar resultados extraordinarios. Los recomendaré a todos mis contactos.
+                    Hemos trabajado con varias agencias de marketing en el pasado,
+                    pero ninguna se compara con el nivel de profesionalismo y habilidad que hemos experimentado con ellos.
+                    Su enfoque nos ha permitido alcanzar resultados extraordinarios. Los recomendaré a todos mis contactos.
                   </p>
                   <div className="details">
-                    {/* <div className="image">
-                      <div
-                        className="main"
-                        data-img-url="img/testimonials/5.jpg"
-                      />
-                    </div> */}
                     <div className="short">
-                      <h3>Rodrigo Sandoval</h3>
+                      <h3 className="lg:mt-5">Rodrigo Sandoval</h3>
                       <span>Welivery</span>
                     </div>
                   </div>

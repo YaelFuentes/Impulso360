@@ -15,7 +15,7 @@ const features_list = [
       text: "Teniendo acordada la identidad visual de tu marca comenzaremos a plasmarla en tu nuevo sitio web y redes sociales de la mano de nuestros diseñadores y analistas.",
     },
     {
-      title: "Lanzamiento oficial",
+      title: `Lanzamiento oficial de proyecto`,
       icon: "img/svg/landing.svg",
       text: "Cuando se cumplan los 30 días de haber comenzado el proyecto, se realiza el lanzamiento de la estrategia integral de todos los métodos de comunicacion elegidos.",
     }

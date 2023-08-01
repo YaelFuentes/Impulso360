@@ -30,7 +30,7 @@ export default function CarouselComponent({ images, onSlideChange }) {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNextSlide();
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [currentSlide]);

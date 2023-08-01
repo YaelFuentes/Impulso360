@@ -4,7 +4,7 @@ const aboutData = {
   designation: "Impulso360",
   title: "Un grupo apasionados por el mundo digital",
   text: [
-    "Somos un grupo de apasionados por el mundo digital conformado por un equipo de profesionales altamente calificados. Nos hemos unido con el objetivo de brindar soluciones integrales",
+    "Somos un grupo conformado por un equipo de profesionales altamente calificados. Nos hemos unido con el objetivo de brindar soluciones integrales",
     "Ayudamos a pequeñas y medianas empresas a alcanzar sus objetivos comerciales y aumentar su precensia en linea. Contamos con expertos en marketing, publicidad digital, diseño web, SEO, y analisis de datos.",
   ],
   skillIcons: [
