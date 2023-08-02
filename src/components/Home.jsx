@@ -2,6 +2,12 @@ import CarouselComponent from './Animations/Carrousel';
 import React, { useState, useEffect } from 'react'
 
 const Home = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const homeData = {
     index: 'Social media | Paid media | SEO | Desarrollo web | Marketing de contenidos | Ventas',
@@ -28,11 +34,45 @@ const Home = () => {
   const handleCarouselSlideChange = (currentIndex) => {
     setCurrentSlideIndex(currentIndex);
   };
+
   useEffect(() => {
     const updatedHomeData = currentSlideIndex === 0 ? homeData : homeData2;
     setCurrentHomeData(updatedHomeData);
   }, [currentSlideIndex]);
   const [currentHomeData, setCurrentHomeData] = useState(homeData);
+
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        alert('¡Correo enviado con éxito!');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
+      } else {
+        alert('Hubo un problema al enviar el correo. Por favor, inténtalo de nuevo.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
   return (
     <div className="devman_tm_section" id="home">
       <div className="devman_tm_hero">
@@ -65,12 +105,12 @@ const Home = () => {
               </div>
             </div>
             <div className="right md:w-1/2 md:ml-4 mt-8 md:mt-0">
-              <form className="contact-form bg-transparent">
+              <form className="contact-form bg-transparent" onSubmit={handleSubmit}>
                 <p className="mb-8 text-white md:text-white text-center text-xl font-bold mt-8">Contáctanos</p>
-                <input className="w-full mb-4 p-2 rounded-md" type="text" placeholder="Nombre" />
-                <input className="w-full mb-4 p-2 rounded-md" type="email" placeholder="Correo electrónico" />
-                <input className="w-full mb-4 p-2 rounded-md" type="phone" placeholder="Telefono" />
-                <textarea className="w-full mb-4 p-2 rounded-md" placeholder="Mensaje"></textarea>
+                <input className="w-full mb-4 p-2 rounded-md" type="text" placeholder="Nombre" onChange={handleChange}/>
+                <input className="w-full mb-4 p-2 rounded-md" type="email" placeholder="Correo electrónico" onChange={handleChange} />
+                <input className="w-full mb-4 p-2 rounded-md" type="phone" placeholder="Telefono" onChange={handleChange}/>
+                <textarea className="w-full mb-4 p-2 rounded-md" placeholder="Mensaje" onChange={handleChange}></textarea>
                 <button className="w-full bg-blue hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-md" type="submit">Enviar</button>
               </form>
             </div>

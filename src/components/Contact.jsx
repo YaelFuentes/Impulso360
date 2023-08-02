@@ -127,15 +127,6 @@ const Contact = () => {
               <div className="right wow fadeInRight" data-wow-duration="1s">
                 <ul>
                   <li>
-                    {/* <div className="list_inner">
-                      <div className="icon">
-                        <i className="icon-location orangeText" />
-                      </div>
-                      <div className="short">
-                        <h3>Address</h3>
-                        <span>20, Somewhere in world</span>
-                      </div>
-                    </div> */}
                   </li>
                   <li>
                     <div className="list_inner">
