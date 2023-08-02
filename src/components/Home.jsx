@@ -83,7 +83,7 @@ const Home = () => {
           <div className="content">
 
             <div className="left">
-              <div className="inner">
+              <div className="inner md:pt-10">
                 <h3 className="hello hidden md:block">{currentHomeData.index}</h3>
                 <h3 className="name">
                   {currentHomeData.firstName}
@@ -95,7 +95,7 @@ const Home = () => {
                 <p className="text hidden md:block">{currentHomeData.bio2}</p>
                 <div className="buttons">
                   <div className="devman_tm_button">
-                    <a className="anchor" href="#service">
+                    <a className="anchor hidden" href="#service">
                       Saber mas
                     </a>
                   </div>
@@ -106,7 +106,7 @@ const Home = () => {
             </div>
             <div className="right md:w-1/2 md:ml-4 mt-8 md:mt-0">
               <form className="contact-form bg-transparent" onSubmit={handleSubmit}>
-                <p className="mb-8 text-white md:text-white text-center text-xl font-bold mt-8">Contáctanos</p>
+                <p className="mb-8 text-white md:text-white text-center text-xl font-bold mt-8 hidden md:block">Contáctanos</p>
                 <input className="w-full mb-4 p-2 rounded-md" type="text" placeholder="Nombre" onChange={handleChange}/>
                 <input className="w-full mb-4 p-2 rounded-md" type="email" placeholder="Correo electrónico" onChange={handleChange} />
                 <input className="w-full mb-4 p-2 rounded-md" type="phone" placeholder="Telefono" onChange={handleChange}/>
