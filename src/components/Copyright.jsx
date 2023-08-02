@@ -6,13 +6,13 @@ const Copyright = () => {
             <div className="inner">
               <div className="left wow fadeInLeft" data-wow-duration="1s">
                 <p>
-                  Developed with love by{" "}
+                  Desarrollado con amor por{" "}
                   <a
                     href="https://themeforest.net/user/codeefly"
                     rel="noreferrer"
                     target="_blank"
                   >
-                    Codeefly
+                    Impuslo360
                   </a>{" "}
                   © {new Date().getFullYear()}
                 </p>
@@ -20,10 +20,10 @@ const Copyright = () => {
               <div className="right wow fadeInRight" data-wow-duration="1s">
                 <ul>
                   <li>
-                    <a href="#">Terms &amp; Condition</a>
+                    <a href="#">Terminos &amp; Condiciones</a>
                   </li>
                   <li>
-                    <a href="#">Privacy Policy</a>
+                    <a href="#">Politicas de privacidad</a>
                   </li>
                 </ul>
               </div>

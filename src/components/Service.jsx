@@ -4,7 +4,7 @@ import ServicePopup from "./popup/ServicePopup";
 const serviceData = [
   {
     name: "Plan Impulso 360",
-    img: "https://lottie.host/b438b32d-81d8-46e1-bedf-e13dd8536eee/PRYgB5NhQq.json",
+    img: "img/imgService/img1.jpg",
     icon: "img/svg/cpu.svg",
     backgroundImage: "img/svg/fondoImg7.jpg",
     description: [
@@ -27,7 +27,7 @@ const serviceData = [
   },
   {
     name: "Plan Premium",
-    img: "https://lottie.host/b9e1d046-950c-43ef-abc6-f04a45213eac/ODjVndPFqv.json",
+    img: "img/imgService/img2.jpg",
     icon: "img/svg/phone.svg",
     backgroundImage: "img/svg/fondoImg6.jpg",
     description: [
@@ -44,7 +44,7 @@ const serviceData = [
   },
   {
     name: "Diseño Gráfico",
-    img: "https://lottie.host/3d252692-c0a0-44e0-96a4-87d4a267568f/zu5EATXbvo.json",
+    img: "img/imgService/img5.jpg",
     icon: "img/svg/web.svg",
     backgroundImage: "img/svg/fondoImg5.jpg",
     description: [
@@ -59,7 +59,7 @@ const serviceData = [
     name: "Plan Personalizado",
     backgroundImage: 'img/svg/fondoImg2.jpg',
     icon: "img/svg/star.svg",
-    img: "https://lottie.host/34787d6f-9445-445b-b6f7-6a6d16890580/Yc2tjogH9W.json",
+    img: "img/imgService/img4.jpg",
     description: [
       "El plan Personalizado está diseñado para adaptarse a las especificidades de tu empresa, abarcando todas las áreas necesarias para impulsar tu presencia en línea y alcanzar tus objetivos comerciales. Nuestro enfoque altamente flexible y personalizado nos permite crear una solución única que se ajuste perfectamente a tus necesidades.",
       "- Plan a medida del cliente",
@@ -76,55 +76,19 @@ const Service = () => {
   const [open, setOpen] = useState(false);
   return (
     <Fragment>
-      {/* <div className="devman_tm_section" id="service">
-        <h2 className="text-center pb-8 text-4xl font-bold">
-          Servicios que ofrecemos
-        </h2>
-        <div className="devman_tm_service">
-          <div className="container mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              {serviceData.map((service, i) => (
-                <div
-                  key={i}
-                  className={`wow ${i % 2 ? "fadeInLeft" : "fadeInRight"}`}
-                  data-wow-duration="1s"
-                >
-                  <div className="list_inner bg-cover bg-center rounded-lg p-4"
-                  style={{ backgroundImage: `url(${service.backgroundImage})` }}>
-                    <img className="svg" src={service.icon} alt="" />
-                    <div className="title font-bold text-xl mb-2">
-                      {service.name}
-                    </div>
-                    <p className="text">
-                      {service.description[0].substring(0, 138)}.
-                    </p>
-                    <button
-                      className=""
-                      onClick={() => openPopup(service)}
-                    >
-                      Ver más
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="shape moving_effect" data-direction="y" data-reverse="yes" />
-        </div>
-      </div> */}
       <ServicePopup open={open} close={() => setOpen(false)} data={activeData} />
       <h2 className="text-center pb-8 text-4xl font-bold">
         Servicios que ofrecemos
       </h2>
       <div className="devman_tm_service" id="service">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:mr-24 lg:ml-24 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:mr-24 lg:ml-24 text-center">
           {serviceData.map((service, i) => (
             <>
-              <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+              <figure className="relative max-w-sm transition-all duration-300 brightness-50 cursor-pointer filter grayscale hover:grayscale-0">
                 <a onClick={() => openPopup(service)}>
-                  <img class="rounded-lg w-full h-96 object-cover" src={service.backgroundImage} alt="image description" />
+                  <img className="rounded-lg w-full h-96 object-cover hover:brightness-50" src={service.backgroundImage} alt="image description" />
                 </a>
-                <figcaption class="absolute px-4 text-lg text-gray-800 bottom-6 text-center font-medium bg-black bg-opacity-40 backdrop-blur-lg p-2 rounded-lg shadow-lg">
+                <figcaption className="absolute px-4 text-xl text-gray-800 bottom-6 text-center font-extrabold bg-black bg-opacity-40 backdrop-blur-lg p-2 rounded-lg shadow-lg">
                   <p>{service.name}</p>
                 </figcaption>
               </figure>

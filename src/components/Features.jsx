@@ -15,7 +15,7 @@ const features_list = [
       text: "Teniendo acordada la identidad visual de tu marca comenzaremos a plasmarla en tu nuevo sitio web y redes sociales de la mano de nuestros diseñadores y analistas.",
     },
     {
-      title: "Lanzamiento oficial",
+      title: `Lanzamiento oficial de proyecto`,
       icon: "img/svg/landing.svg",
       text: "Cuando se cumplan los 30 días de haber comenzado el proyecto, se realiza el lanzamiento de la estrategia integral de todos los métodos de comunicacion elegidos.",
     }
@@ -42,7 +42,7 @@ const features_list = [
                     <div className="list_inner">
                       <div className="short">
                         <div className="title">
-                          <span>{`0${i + 1}`}</span>
+                          <span>Paso {`0${i + 1}`}</span>
                           <h3>{feature.title}</h3>
                         </div>
                         <div className="icon">

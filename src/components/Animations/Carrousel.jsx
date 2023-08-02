@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Swipe from "react-easy-swipe";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
-export default function CarouselComponent({ images }) {
+export default function CarouselComponent({ images, onSlideChange }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [zoomedSlide, setZoomedSlide] = useState(null);
 
@@ -11,18 +11,26 @@ export default function CarouselComponent({ images }) {
     let newSlide = currentSlide === images.length - 1 ? 0 : currentSlide + 1;
     setCurrentSlide(newSlide);
     setZoomedSlide(null);
+    // Invocamos la función para informar al componente Home sobre el cambio del slide
+    if (onSlideChange) {
+      onSlideChange(newSlide);
+    }
   };
 
   const handlePrevSlide = () => {
     let newSlide = currentSlide === 0 ? images.length - 1 : currentSlide - 1;
     setCurrentSlide(newSlide);
     setZoomedSlide(null);
+    // Invocamos la función para informar al componente Home sobre el cambio del slide
+    if (onSlideChange) {
+      onSlideChange(newSlide);
+    }
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
       handleNextSlide();
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [currentSlide]);
@@ -38,10 +46,10 @@ export default function CarouselComponent({ images }) {
 
   return (
     <div className="relative">
-      <AiOutlineLeft
+      {/* <AiOutlineLeft
         onClick={handlePrevSlide}
         className="absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
-      />
+      /> */}
       <div className="w-full h-[100vh] m-auto">
         <Swipe
           onSwipeLeft={handleNextSlide}
@@ -73,17 +81,19 @@ export default function CarouselComponent({ images }) {
                   />
                 </div>
                 {isCurrentSlide && (
-                  <div className="w-full h-full absolute bg-black opacity-70"></div>
+                  <div className="w-full h-full absolute">
+                    <p className="text-white text-center text-xl px-6 py-4">{image.text}</p>
+                  </div>
                 )}
               </div>
             );
           })}
         </Swipe>
       </div>
-      <AiOutlineRight
+      {/* <AiOutlineRight
         onClick={handleNextSlide}
         className="absolute right-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
-      />
+      /> */}
 
       <div className="relative flex justify-center p-2">
         {images.map((_, index) => (

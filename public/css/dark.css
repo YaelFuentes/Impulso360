@@ -47,24 +47,24 @@ body.dark .devman_tm_modalbox .description_wrap{
   scrollbar-color: #777 #34353a;
 }
 body.dark .devman_tm_modalbox .description_wrap:-webkit-scrollbar-track{
-  background: #34353a;
+  background: #ffffff;
 }
 body.dark .devman_tm_modalbox .description_wrap::-webkit-scrollbar-thumb{
   background-color: #777;
   border-radius: 6px;
-  border: 3px solid #34353a;
+  border: 3px solid #00c9ff;
 }
 body.dark .devman_tm_modalbox .box_inner{
-	background-color: #34353a;
+	background-color: #00c9ff;
 }
 body.dark .devman_tm_modalbox .description_wrap:after{
-	background-color: #34353a;
+	background-color: #00c9ff;
 }
 body.dark .devman_tm_modalbox .description_wrap:before{
-	background-color: #34353a;
+	background-color: #00c9ff;
 }
 body.dark .devman_tm_features .features_list ul li .short:before{
-	background-color: rgba(202,205,211,.24);
+	background-color: #00c9ff;
 }
 body.dark .progress_inner span.label{
 	color: #000000;
@@ -79,11 +79,17 @@ body.dark .devman_tm_accordion .plus:before{
 	background-color: #000000;
 }
 body.dark .devman_tm_testimonials .swiper .swiper-slide .list_inner{
-	background-color: #444359;
+	background-color: #00c9ff;
 	box-shadow: none;
 }
 body.dark .devman_tm_testimonials .swiper .swiper-slide .text{
-	color: #aaaaba;
+	color: #000000;
+}
+body.dark .devman_tm_testimonials .swiper .swiper-slide .textTestimonial {
+	color:white
+}
+body.dark .devman_tm_testimonials .swiper .swiper-slide .textTestimonial {
+	color:white
 }
 body.dark .devman_tm_testimonials .owl-theme .owl-dots .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	background-color: #fff;
