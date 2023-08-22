@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useRef, useState } from "react";
+import React, { useState, useRef, useCallback } from "react";
 
 const accordionData = [
   {
@@ -58,50 +58,76 @@ const accordionData = [
 
 const Accordion = () => {
   const [active, setActive] = useState(null);
-  const contentEl = useRef();
-  useEffect(() => {
-    setActive(0);
-  }, [contentEl.current]);
-
+  const contentRefs = accordionData.map(() => useRef(null));
+  const handleAccordionClick = useCallback((index) => {
+    if (active === index) {
+      setActive(null);
+    } else {
+      setActive(index);
+    }
+  }, [active]);
   const onClick = (value) =>
     value === active ? setActive(null) : setActive(value);
 
   return (
-    <Fragment>
-      <div
-        className="devman_tm_accordion"
-        data-active={1}
-        data-type="accordion"
-      >
-        {accordionData.map((accordion, i) => (
+    <div className="devman_tm_accordion" data-active={1} data-type="accordion">
+      {accordionData.map((accordion, i) => (
+        <div className={`accordion_in ${active === i ? "acc_active" : ""}`} key={i}>
+          <div className="acc_head" onClick={() => handleAccordionClick(i)}>
+            <span className="plus" />
+            <p>{accordion.title}</p>
+          </div>
           <div
-            className={`accordion_in ${active == i ? "acc_active" : ""}`}
-            key={i}
+            className={`acc_content d-block`}
+            ref={contentRefs[i]}
+            style={
+              active === i
+                ? {
+                  maxHeight: contentRefs[i].current
+                    ? contentRefs[i].current.scrollHeight + "px"
+                    : "none",
+                  transition: "max-height 0.3s ease-in-out",
+                }
+                : { maxHeight: "0", transition: "max-height 0.3s ease-in-out" }
+            }
           >
-            <div className="acc_head" onClick={() => onClick(i)}>
-              <span className="plus" />
-              <p>{accordion.title}</p>
-            </div>
-            <div
-              className={`acc_content d-block`}
-              ref={contentEl}
-              style={
-                active === i
-                  ? {
-                    height:
-                      contentEl.current && contentEl.current.scrollHeight,
-                  }
-                  : { height: "0px" }
-              }
-            >
-              <div className="acc_content_in">
-                <p>{accordion.details}</p>
-              </div>
+            <div className="acc_content_in">
+              <p>{accordion.details}</p>
             </div>
           </div>
-        ))}
-      </div>
-    </Fragment>
+        </div>
+      ))}
+    </div>
   );
 };
 export default Accordion;
+
+
+{/* <div className="devman_tm_accordion" data-active={1} data-type="accordion">
+  {accordionData.map((accordion, i) => (
+    <div className={`accordion_in ${active === i ? "acc_active" : ""}`} key={i}>
+      <div className="acc_head" onClick={() => onClick(i)}>
+        <span className="plus" />
+        <p>{accordion.title}</p>
+      </div>
+      <div
+        className={`acc_content d-block`}
+        ref={contentEl}
+        style={
+          active === i
+            ? {
+                maxHeight: contentEl.current
+                  ? contentEl.current.scrollHeight + "px"
+                  : "none",
+                transition: "max-height 0.3s ease-in-out",
+              }
+            : { maxHeight: "0", transition: "max-height 0.3s ease-in-out" }
+        }
+      >
+        <div className="acc_content_in">
+          <p>{accordion.details}</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div> */}

@@ -53,7 +53,7 @@ const Testimonials = () => {
                   </p>
                   <div className="details">
                     <div className="short">
-                      <h3 className="xs:mt-5">Daniel Araya</h3>
+                      <h3 className="mt-5">Daniel Araya</h3>
                       <span>Black Group</span>
                     </div>
                   </div>
@@ -69,7 +69,7 @@ const Testimonials = () => {
                   </p>
                   <div className="details">
                     <div className="short">
-                      <h3 className="md:mt-5">Carolina Riquelme</h3>
+                      <h3 className="mt-5">Carolina Riquelme</h3>
                       <span>Zendit</span>
                     </div>
                   </div>
@@ -85,8 +85,8 @@ const Testimonials = () => {
                   </p>
                   <div className="details">
                     <div className="short">
-                      <h3 className="lg:mt-5">Rodrigo Sandoval</h3>
-                      <span>Welivery</span>
+                      <h3 className="mt-5">Rodrigo Sandoval</h3>
+                      <span>Sur Design</span>
                     </div>
                   </div>
                 </div>

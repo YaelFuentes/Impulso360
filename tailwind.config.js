@@ -44,7 +44,7 @@ module.exports = {
 
     xs: { max: "479px" },
     // => @media (max-width: 479px) { ... }
-    xxs: { max: "425px" }
+    xxs: { max: "424px" }
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }

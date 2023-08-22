@@ -1,5 +1,6 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
+import FolderList from "./listInfo";
 
 const Contact = () => {
   const [mailData, setMailData] = useState({
@@ -48,7 +49,7 @@ const Contact = () => {
         <div className="container">
           <div className="contact_inner">
             <div className="devman_tm_main_title" data-text-align="left">
-              <span>Habla con nosotros</span>
+              <span>Completa <u>HOY</u> tus datos. Tienes una asesoría y cotización a medida 100% gratuita</span>
               <h3>Contactanos</h3>
             </div>
             <div className="in">
@@ -124,9 +125,20 @@ const Contact = () => {
                   </form>
                 </div>
               </div>
-              <div className="right wow fadeInRight" data-wow-duration="1s">
+              {/* <div className="right wow fadeInRight" data-wow-duration="1s">
                 <ul>
                   <li>
+                    <div className="list_inner">
+                      <div className="icon">
+                        <i className="icon-mail-1 greenText" />
+                      </div>
+                      <div className="short">
+                        <h3>Email</h3>
+                        <span>
+                          <a href="#">hello@devman.com</a>
+                        </span>
+                      </div>
+                    </div>
                   </li>
                   <li>
                     <div className="list_inner">
@@ -153,7 +165,8 @@ const Contact = () => {
                     </div>
                   </li>
                 </ul>
-              </div>
+              </div> */}
+              <FolderList />
             </div>
             <div
               className="shape moving_effect"
@@ -167,8 +180,8 @@ const Contact = () => {
             />
           </div>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 };
 export default Contact;

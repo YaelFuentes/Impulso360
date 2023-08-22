@@ -1,23 +1,23 @@
 const features_list = [
     {
-      title: "Analisis e investigacion",
+      title: "Análisis e investigación",
       icon: "img/svg/design.svg",
-      text: "Comenzaremos armando la estrategia de tu marca a partir de una investigación de mercado. El periodo dura 7 dias hábiles.",
+      text: "Vamos a comenzar a armar la estrategia de tu marca a partir de una investigación de mercado. El periodo investigativo dura 7 días",
     },
     {
-      title: "Presentacion de proyecto",
+      title: "Armado de Diseño y Prototipo",
       icon: "img/svg/development.svg",
-      text: "Luego se comenzara a trabajar en la idea principal de la estrategia integral. Esto incluye modelo de mercado, diseño grafico y redes sociales.",
+      text: "Luego de haber investigado, inmediatamente se comienza a trabajar en la idea principal de la estrategia integral. Esto incluye el modelo de mercado, diseño gráfico y redes sociales.",
     },
     {
-      title: "Armado de herramientas online",
+      title: "Desarrollo de activos digitales",
       icon: "img/svg/landing.svg",
-      text: "Teniendo acordada la identidad visual de tu marca comenzaremos a plasmarla en tu nuevo sitio web y redes sociales de la mano de nuestros diseñadores y analistas.",
+      text: "Luego de nuestra junta y teniendo acordada la identidad visual de tu marca, comenzaremos a plasmarla en tu nuevo sitio web y redes sociales de la mano de nuestros diseñadores y analistas.",
     },
     {
       title: `Lanzamiento oficial de proyecto`,
       icon: "img/svg/landing.svg",
-      text: "Cuando se cumplan los 30 días de haber comenzado el proyecto, se realiza el lanzamiento de la estrategia integral de todos los métodos de comunicacion elegidos.",
+      text: "Cuando se cumplan los 30 días de haber iniciado el proyecto, se realiza el lanzamiento de la estrategia integral en todos los canales digitales establecidos + grilla de contenidos.",
     }
   ];
   const Features = () => {

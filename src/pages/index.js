@@ -38,7 +38,7 @@ const Index = () => {
         <Header />
         <Home />
         <Features />
-        <Service />
+        <Service/>
         <About />
         {/* <CounterSection /> */}
         {/* <Portfolio /> */}

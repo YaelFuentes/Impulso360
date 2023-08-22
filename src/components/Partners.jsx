@@ -17,7 +17,7 @@ const Partners = ({ dark }) => {
               <img class="h-auto max-w-full max-h-24 md:max-h-32 rounded-lg" src="imagenes/empresas/casaCoraje.jpg" alt="" />
             </div>
             <div class="flex justify-center items-center">
-              <img class="h-auto max-w-full max-h-24 md:max-h-32 rounded-lg" src="imagenes/empresas/partWelivery.jpg" alt="" />
+              <img class="h-auto max-w-full max-h-24 md:max-h-32 rounded-lg" src="imagenes/empresas/sur.jpeg" alt="" />
             </div>
             <div class="flex justify-center items-center">
               <img class="h-auto max-w-full max-h-24 md:max-h-32 rounded-lg" src="imagenes/empresas/zendit.png" alt="" />

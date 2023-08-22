@@ -11,10 +11,10 @@ const Skills = () => {
       <div className="devman_tm_skills">
         <div className="container">
           <div className="devman_tm_main_title" data-text-align="center">
-            <span>Problemas de digitalizacion</span>
+            {/* <span>Problemas de digitalizacion</span> */}
             <h3>Principales problemas de las marcas</h3>
             <p>
-              Estos son los principales problemas que presentan las marcas a la hora de hablar de digitalizacion
+            Estos son los principales problemas digitales que presentan las marcas para poder escalar sus negocios y lograr los objetivos deseados
             </p>
           </div>
           <div className="skills_wrapper">
@@ -26,7 +26,7 @@ const Skills = () => {
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Falta de estrategias</span>
+                    <span className="label">Carecen de Identidad Visual</span>
                     <span className="number">90%</span>
                   </span>
                   <div className="background">
@@ -56,7 +56,7 @@ const Skills = () => {
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">No poseen identidad visual</span>
+                    <span className="label">Alcance de audiencia nulo</span>
                     <span className="number">98%</span>
                   </span>
                   <div className="background">
@@ -75,7 +75,7 @@ const Skills = () => {
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Poca Planificacion</span>
+                    <span className="label">No poseen página web</span>
                     <span className="number">92%</span>
                   </span>
                   <div className="background">
@@ -90,7 +90,7 @@ const Skills = () => {
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">No poseen paginas web</span>
+                    <span className="label">Estrategia comercial nula</span>
                     <span className="number">90%</span>
                   </span>
                   <div className="background">
@@ -105,7 +105,7 @@ const Skills = () => {
                   data-color="#142eb5"
                 >
                   <span>
-                    <span className="label">Tienen poco alcance</span>
+                    <span className="label">Poca planificación</span>
                     <span className="number">96%</span>
                   </span>
                   <div className="background">

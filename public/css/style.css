@@ -35,6 +35,7 @@ a {
 }
 :root {
   --main-color: #007c9d;
+  
   --font-family-main: "Open Sans", sans-serif;
   --font-family-extra: "Barlow", sans-serif;
 }
@@ -284,9 +285,7 @@ h6 {
 }
 .devman_tm_section {
   width: 100%;
-  height: 10% !important;
-  clear: both;
-  float: left;
+  height: 150% !important;
 }
 
 /*---------------------------------------------------*/
@@ -485,7 +484,7 @@ h6 {
 
 .devman_tm_hero {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   position: relative;
   float: left;
   overflow: hidden;
@@ -516,7 +515,7 @@ h6 {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+ 
 }
 .devman_tm_hero .left {
   width: 45%;
@@ -524,6 +523,7 @@ h6 {
 }
 .devman_tm_hero .left .inner {
   position: relative;
+  padding-top: 100px;
   z-index: 2;
 }
 .devman_tm_hero .hello {
@@ -716,11 +716,7 @@ h6 {
 }
 
 .devman_tm_hero .right {
-  width: 55%;
-  padding-left: 250px;
-}
-.devman_tm_hero .right .image {
-  position: relative;
+  width: 100%;
 }
 .devman_tm_hero .right .image img {
   position: relative;
@@ -779,8 +775,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 35px;
-  margin-bottom: 30px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
   position: relative;
 }
 .devman_tm_features .features_list ul li .short:before {
@@ -978,7 +974,7 @@ h6 {
 }
 .devman_tm_about .right .title span {
   font-size: 24px;
-  color: var(--main-color);
+  color: #1012df;
   font-family: var(--font-family-extra);
   font-weight: 600;
 }
@@ -989,10 +985,10 @@ h6 {
 .devman_tm_about .right .text {
   width: 100%;
   float: left;
-  margin-bottom: 42px;
+/*   margin-bottom: 42px; */
 }
 .devman_tm_about .right .text p {
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 .devman_tm_about .right .text p:last-child {
   margin-bottom: 0px;
@@ -1862,7 +1858,7 @@ h6 {
   float: left;
   clear: both;
   overflow: hidden;
-  min-height: 50px;
+  min-height: 0px;
   display: flex;
   padding: 14px 0 7px 50px;
   position: relative;
@@ -1893,7 +1889,7 @@ h6 {
   clear: both;
   overflow: hidden;
   position: relative;
-  margin: 5px 0;
+  margin: 1px 0;
   border: none !important;
   background: none !important;
 }
@@ -1902,8 +1898,9 @@ h6 {
   float: left;
   clear: both;
   overflow: hidden;
-  padding: 11px 0 8px 50px;
+  padding: 10px 0 8px 50px;
   position: relative;
+  margin-bottom: 20px;
 }
 .devman_tm_accordion .plus {
   display: block;
@@ -2631,7 +2628,7 @@ h6 {
 /*	18) DEVMAN MAGIC CURSOR
 /*---------------------------------------------------*/
 
-.mouse-cursor {
+/* .mouse-cursor {
   position: fixed;
   left: 0;
   top: 0;
@@ -2640,8 +2637,8 @@ h6 {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   visibility: hidden;
-}
-.cursor-inner {
+} */
+/* .cursor-inner {
   margin-left: -3px;
   margin-top: -3px;
   width: 6px;
@@ -2652,16 +2649,16 @@ h6 {
     margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
     margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-.cursor-inner.cursor-hover {
+} */
+/* .cursor-inner.cursor-hover {
   margin-left: -40px;
   margin-top: -40px;
   width: 80px;
   height: 80px;
   background-color: var(--main-color);
   opacity: 0.3;
-}
-.cursor-outer {
+} */
+/* .cursor-outer {
   margin-left: -15px;
   margin-top: -15px;
   width: 30px;
@@ -2672,7 +2669,7 @@ h6 {
   z-index: 100;
   opacity: 0.5;
   -webkit-transition: all 0.08s ease-out;
-  transition: all 0.08s ease-out;
+  transition: all 0.08s ease-out; 
 }
 .cursor-outer.cursor-hover {
   opacity: 0;
@@ -2683,7 +2680,7 @@ h6 {
   visibility: hidden;
   position: absolute;
   z-index: -1111;
-}
+} */
 
 /*---------------------------------------------------*/
 /*	 DEVMAN INTRO

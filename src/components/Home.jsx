@@ -25,12 +25,12 @@ const Home = () => {
     firstName: "Impulso360",
     info: 'Planes a medida',
     img: "img/hero/3.jpg",
-    bio: "En 30 días implementaremos un plan exitoso para impulsar el éxito de tu negocio y acelerar tu éxito empresarial. El reloj está corriendo!",
+    bio: `En 30 días implementaremos un plan exitoso para impulsar el éxito de tu negocio y acelerar tu éxito empresarial. El reloj está corriendo!`,
     bio2: 'Fidelizacion y seguimiento de clientes'
   };
   const images = [
     { src: '/imagenes/carousel/carousel1.jpg', alt: 'Image 1' },
-    { src: '/imagenes/carousel/carousel2.jpg', alt: 'Image 2' },
+    { src: '/imagenes/carousel/carousel4.jpg', alt: 'Image 2' },
   ];
 
   const handleCarouselSlideChange = (currentIndex) => {
@@ -85,37 +85,34 @@ const Home = () => {
           <div className="content">
 
             <div className="left">
-              <div className="inner md:pt-10">
-                <h3 className="hello hidden md:block">{currentHomeData.index}</h3>
+              <div className="inner">
+                <h3 className="hello">{currentHomeData.index}</h3>
                 <h3 className="name">
                   {homeData.firstName}
                 </h3>
                 <h3 className="job">
-                  {/* {homeData.designation} from {homeData.address} */}
                   Una nueva forma de impulsar tu negocio digital
                 </h3>
                 <p className="text">{currentHomeData.bio}</p>
-                <p className="text hidden md:block">{currentHomeData.bio2}</p>
-                <div className="buttons">
-                  <div className="devman_tm_button">
-                    <a className="anchor hidden" href="#service">
-                      Saber mas
-                    </a>
-                  </div>
-                </div>
+                <p className="text">{currentHomeData.bio2}</p>
                 <h3 className="stroke_1">{currentHomeData.firstName}</h3>
                 <h3 className="stroke_2">{currentHomeData.lastName}</h3>
               </div>
             </div>
-            <div className="right md:w-1/2 md:ml-4 mt-8 md:mt-0">
-              <form className="contact-form bg-transparent" onSubmit={handleSubmit}>
-                <p className="mb-8 text-white md:text-white text-center text-xl font-bold mt-8 hidden md:block">Contáctanos</p>
-                <input className="w-full mb-4 p-2 rounded-md" type="text" placeholder="Nombre" onChange={handleChange}/>
-                <input className="w-full mb-4 p-2 rounded-md" type="email" placeholder="Correo electrónico" onChange={handleChange} />
-                <input className="w-full mb-4 p-2 rounded-md" type="phone" placeholder="Telefono" onChange={handleChange}/>
-                <textarea className="w-full mb-4 p-2 rounded-md" placeholder="Mensaje" onChange={handleChange}></textarea>
-                <button className="w-full bg-blue hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-md" type="submit">Enviar</button>
-              </form>
+            <div className="flex justify-end p-4 mb-10">
+              <div className="md:w-1/2 md:ml-4 sm:m-10">
+                <form className="contact-form bg-transparent" onSubmit={handleSubmit}>
+                  {/* <div className='text-white font-sans'>
+                    <p className="text-2xl font-semibold mb-2">Completa HOY tus datos.</p>
+                    <p className="text-lg mb-4">Tienes una asesoría y cotización a medida 100% gratuita</p>
+                  </div>*/}
+                  <input className="w-11/12 mb-4 p-1 rounded-md sm:w-full sm:mx-auto" type="text" placeholder="Nombre" onChange={handleChange} />
+                  <input className="w-11/12 mb-4 p-2 rounded-md sm:w-full sm:mx-auto" type="email" placeholder="Correo electrónico" onChange={handleChange} />
+                  <input className="w-11/12 mb-4 p-2 rounded-md sm:w-full sm:mx-auto" type="phone" placeholder="Telefono" onChange={handleChange} />
+                  <textarea className="w-11/12 mb-4 p-2 rounded-md sm:w-full sm:mx-auto" placeholder="Mensaje" onChange={handleChange}></textarea>
+                  <button className="w-11/12 bg-blue-600 text-white font-bold py-2 px-6 rounded-md" type="submit">Enviar</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>

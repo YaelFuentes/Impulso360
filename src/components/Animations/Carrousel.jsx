@@ -95,7 +95,7 @@ export default function CarouselComponent({ images, onSlideChange }) {
         className="absolute right-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
       /> */}
 
-      <div className="relative flex justify-center p-2">
+      {/* <div className="relative flex justify-center p-2">
         {images.map((_, index) => (
           <div
             className={
@@ -109,7 +109,7 @@ export default function CarouselComponent({ images, onSlideChange }) {
             }}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

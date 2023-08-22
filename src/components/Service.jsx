@@ -1,5 +1,7 @@
-import { Fragment, useState } from "react";
+import React, { Fragment, useState } from "react";
 import ServicePopup from "./popup/ServicePopup";
+import { Accordion } from "flowbite";
+import BasicAccordion from "./AccordionService";
 
 const serviceData = [
   {
@@ -26,6 +28,7 @@ const serviceData = [
     ],
   },
   {
+    id: 2,
     name: "Plan Premium",
     img: "img/imgService/img2.jpg",
     icon: "img/svg/phone.svg",
@@ -43,6 +46,7 @@ const serviceData = [
     ],
   },
   {
+    id: 3,
     name: "Diseño Gráfico",
     img: "img/imgService/img5.jpg",
     icon: "img/svg/web.svg",
@@ -56,6 +60,7 @@ const serviceData = [
     ],
   },
   {
+    id: 4,
     name: "Plan Personalizado",
     backgroundImage: 'img/svg/fondoImg2.jpg',
     icon: "img/svg/star.svg",
@@ -68,35 +73,44 @@ const serviceData = [
   },
 ];
 const Service = () => {
-  const openPopup = (service) => {
-    setActiveData(service);
-    setOpen(true);
+  const [openIndex, setOpenIndex] = useState(null); // Estado para controlar la tarjeta abierta
+
+  const openPopup = (serviceIndex) => {
+    setOpenIndex(serviceIndex);
   };
-  const [activeData, setActiveData] = useState({});
-  const [open, setOpen] = useState(false);
+
+  const closePopup = () => {
+    setOpenIndex(null);
+  };
+
   return (
-    <Fragment>
-      <ServicePopup open={open} close={() => setOpen(false)} data={activeData} />
+    <div className="p-4">
       <h2 className="text-center pb-8 text-4xl font-bold">
         Servicios que ofrecemos
       </h2>
-      <div className="devman_tm_service" id="service">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:mr-24 lg:ml-24 text-center">
-          {serviceData.map((service, i) => (
-            <>
-              <figure className="relative max-w-sm transition-all duration-300 brightness-50 cursor-pointer filter grayscale hover:grayscale-0">
-                <a onClick={() => openPopup(service)}>
-                  <img className="rounded-lg w-full h-96 object-cover hover:brightness-50" src={service.backgroundImage} alt="image description" />
-                </a>
-                <figcaption className="absolute px-4 text-xl text-gray-800 bottom-6 text-center font-extrabold bg-black bg-opacity-40 backdrop-blur-lg p-2 rounded-lg shadow-lg">
-                  <p>{service.name}</p>
-                </figcaption>
-              </figure>
-            </>
-          ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-20">
+        <div className="w-full h-full p-6 flex justify-center items-center">
+          <div className="max-w-lg mx-auto">
+            <figure className="relative transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+              <a href="#">
+                <img className="rounded-lg h-auto w-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png" alt="image description" />
+              </a>
+              <figcaption className="absolute px-4 text-lg text-white bottom-6">
+                <p></p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div className="w-full">
+          <div id="accordion-open" data-accordion="open" className="m-6">
+            {serviceData.map((service, i) => (
+              <BasicAccordion key={i} title={service.name} description={service.description} />
+            ))}
+          </div>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 };
 export default Service;
+

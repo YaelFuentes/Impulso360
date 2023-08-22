@@ -2,10 +2,11 @@ import { Player } from '@lottiefiles/react-lottie-player';
 
 const aboutData = {
   designation: "Impulso360",
-  title: "Un grupo apasionados por el mundo digital",
+  title: "Somos un grupo de apasionados por la transformación digital",
   text: [
-    "Somos un grupo conformado por un equipo de profesionales altamente calificados. Nos hemos unido con el objetivo de brindar soluciones integrales",
-    "Ayudamos a pequeñas y medianas empresas a alcanzar sus objetivos comerciales y aumentar su precensia en linea. Contamos con expertos en marketing, publicidad digital, diseño web, SEO, y analisis de datos.",
+    "Somos un equipo de apasionados por la transformación digital con mas de 10 años revolucionando la industria y evolucionando junto a las nuevas tecnologías.",
+    "Nos hemos unido con el objetivo de brindar soluciones integrales en el ámbito del marketing digital con fuerte orientación comercial; ayudamos a las pequeñas y medianas empresas a alcanzar sus objetivos comerciales y aumentar su presencia en línea.",
+    "Creemos en la importancia de entender a fondo su negocio y su público objetivo para poder generar resultados efectivos."
   ],
   skillIcons: [
     { name: "joomla", icon: "img/svg/joomla.svg" },
