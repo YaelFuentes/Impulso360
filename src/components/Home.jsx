@@ -110,7 +110,7 @@ const Home = () => {
                   <input className="w-11/12 mb-4 p-2 rounded-md sm:w-full sm:mx-auto" type="email" placeholder="Correo electrónico" onChange={handleChange} />
                   <input className="w-11/12 mb-4 p-2 rounded-md sm:w-full sm:mx-auto" type="phone" placeholder="Telefono" onChange={handleChange} />
                   <textarea className="w-11/12 mb-4 p-2 rounded-md sm:w-full sm:mx-auto" placeholder="Mensaje" onChange={handleChange}></textarea>
-                  <button className="w-11/12 bg-blue-600 text-white font-bold py-2 px-6 rounded-md" type="submit">Enviar</button>
+                  <button className="w-11/12 sm:w-full bg-blue-600 text-white font-bold py-2 px-6 rounded-md" type="submit">Enviar</button>
                 </form>
               </div>
             </div>
