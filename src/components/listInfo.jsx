@@ -9,7 +9,9 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import LanguageIcon from '@mui/icons-material/Language';
 import Chile from '../img/icon/chile.png'
+import Argentina from '../img/icon/argentina.png'
 import PublicIcon from '@mui/icons-material/Public';
+import Image from 'next/image';
 
 export default function FolderList() {
   return (
@@ -19,7 +21,7 @@ export default function FolderList() {
           <ListItem>
             <ListItemAvatar>
               <Avatar>
-                <PublicIcon />
+                <Image src={Chile} />
               </Avatar>
             </ListItemAvatar>
             <ListItemText primary="Agencia Chile" />
@@ -56,7 +58,7 @@ export default function FolderList() {
           <ListItem>
             <ListItemAvatar>
               <Avatar>
-                <PublicIcon />
+                <Image src={Argentina}/>
               </Avatar>
             </ListItemAvatar>
             <ListItemText primary="Agencia Argentina" />
