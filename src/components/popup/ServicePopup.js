@@ -4,17 +4,23 @@ const ServicePopup = ({ data, open, close }) => {
   return (
     <Popup open={open} close={close}>
       <div className="service_popup_informations">
-        <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-2 bg-lightblue relative" >
+        <div className="bg-white relative p-4">
           <div className="relative">
-            <div className="sticky inset-0 h-screen">
-              <img src={data.img} alt="image description" className="rounded-lg w-96 h-96 object-cover hover:brightness-50 mt-10" />
+            <div className="sticky inset-0">
+              <img src={data.img} alt="image description" className="rounded-lg hover:brightness-50 object-top h-4/5 w-full lg:h-[26rem]" />
             </div>
           </div>
           <div>
-            <div className="text-lg m-5 p-2 text-blue">
+            <div className="text-lg m-5 p-2 text-blues">
               {data &&
                 data.description &&
                 data.description.map((des, i) => <p key={i}>{des}</p>)}
+
+              <br /> {/* Agrega un salto de línea entre description y description2 */}
+
+              {data &&
+                data.description2 &&
+                data.description2.map((des, i) => <p key={i}>{des}</p>)}
             </div>
           </div>
         </div>

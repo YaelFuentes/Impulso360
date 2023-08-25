@@ -50,7 +50,7 @@ const Contact = () => {
           <div className="contact_inner">
             <div className="devman_tm_main_title" data-text-align="left">
               <span>Completa <u>HOY</u> tus datos. Tienes una asesoría y cotización a medida 100% gratuita</span>
-              <h3>Contactanos</h3>
+              <h3 className="mt-10">Contactanos</h3>
             </div>
             <div className="in">
               <div className="left wow fadeInLeft" data-wow-duration="1s">
@@ -125,59 +125,8 @@ const Contact = () => {
                   </form>
                 </div>
               </div>
-              {/* <div className="right wow fadeInRight" data-wow-duration="1s">
-                <ul>
-                  <li>
-                    <div className="list_inner">
-                      <div className="icon">
-                        <i className="icon-mail-1 greenText" />
-                      </div>
-                      <div className="short">
-                        <h3>Email</h3>
-                        <span>
-                          <a href="#">hello@devman.com</a>
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="list_inner">
-                      <div className="icon">
-                        <i className="icon-mail-1 greenText" />
-                      </div>
-                      <div className="short">
-                        <h3>Email</h3>
-                        <span>
-                          <a href="#">hello@devman.com</a>
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="list_inner">
-                      <div className="icon">
-                        <i className="icon-phone purpleText" />
-                      </div>
-                      <div className="short">
-                        <h3>Telefono</h3>
-                        <span>+56 9 9589 9154</span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div> */}
               <FolderList />
             </div>
-            <div
-              className="shape moving_effect"
-              data-direction="y"
-              data-reverse="yes"
-            />
-            <div
-              className="shape_2 moving_effect"
-              data-direction="y"
-              data-reverse="yes"
-            />
           </div>
         </div>
       </div >

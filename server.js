@@ -1,4 +1,4 @@
-const express = require('express');
+/* const express = require('express');
 const nodemailer = require('nodemailer');
 const app = express();
 
@@ -12,13 +12,13 @@ app.post('/api/send-email', (req, res) => {
     service: 'Gmail', // Cambia a tu proveedor de correo electrónico
     auth: {
       user: 'yaelfuentes32@gmail.com', // Cambia a tu dirección de correo electrónico
-      pass: 'unlockallthings', // Cambia a tu contraseña
+      pass: 'jaoqwdtgleyotthi', // Cambia a tu contraseña
     },
   });
 
   const mailOptions = {
     from: 'yaelfuentes32@gmail.com', // Cambia a tu dirección de correo electrónico
-    to: 'yaelfuentes32@gmail.com', // Cambia al destinatario del correo
+    to: 'n.juanignacio99@gmail.com', // Cambia al destinatario del correo
     subject: 'Nuevo mensaje de contacto',
     text: `Nombre: ${name}\nCorreo electrónico: ${email}\nTeléfono: ${phone}\nMensaje: ${message}`,
   };
@@ -36,6 +36,6 @@ app.post('/api/send-email', (req, res) => {
 });
 
 // Inicia el servidor en el puerto 3001 o cualquier otro de tu elección
-app.listen(3001, () => {
+app.listen(8081, () => {
   console.log('Server running on http://localhost:3001');
-});
+}); */

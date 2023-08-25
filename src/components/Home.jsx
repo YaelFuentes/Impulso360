@@ -44,11 +44,14 @@ const Home = () => {
   const [currentHomeData, setCurrentHomeData] = useState(homeData);
 
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
     try {
       const response = await fetch('/api/send-email', {
         method: 'POST',
@@ -58,33 +61,28 @@ const Home = () => {
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
-
-      if (data.success) {
-        alert('¡Correo enviado con éxito!');
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          message: '',
-        });
+      if (response.ok) {
+        console.log('Correo enviado exitosamente');
+        // Haz algo aquí después de enviar el correo exitosamente
       } else {
-        alert('Hubo un problema al enviar el correo. Por favor, inténtalo de nuevo.');
+        console.error('Error al enviar el correo');
+        // Manejo de errores aquí
       }
     } catch (error) {
       console.error('Error:', error);
+      // Manejo de errores aquí
     }
   };
   return (
     <div className="devman_tm_section" id="home">
-      <div className="devman_tm_hero">
+      <div className="devman_tm_hero md:h-[110vh] h-[170vh] ">
         <div className="background">
           <CarouselComponent images={images} onSlideChange={handleCarouselSlideChange} currentSlideIndex={currentSlideIndex} />
         </div>
         <div className="container ">
           <div className="content">
 
-            <div className="left">
+            <div className="left max-[800px]:mt-44">
               <div className="inner">
                 <h3 className="hello">{currentHomeData.index}</h3>
                 <h3 className="name">
@@ -99,17 +97,20 @@ const Home = () => {
                 <h3 className="stroke_2">{currentHomeData.lastName}</h3>
               </div>
             </div>
-            <div className="flex justify-end p-4 mb-10">
-              <div className="md:w-1/2 md:ml-4 sm:m-10">
+            <div className="flex justify-end p-4 ">
+              <div className="md:w-1/2 md:ml-4 sm:m-10 mt-48">
                 <form className="contact-form bg-transparent" onSubmit={handleSubmit}>
-                  {/* <div className='text-white font-sans'>
-                    <p className="text-2xl font-semibold mb-2">Completa HOY tus datos.</p>
-                    <p className="text-lg mb-4">Tienes una asesoría y cotización a medida 100% gratuita</p>
-                  </div>*/}
-                  <input className="w-11/12 mb-4 p-1 rounded-md sm:w-full sm:mx-auto" type="text" placeholder="Nombre" onChange={handleChange} />
-                  <input className="w-11/12 mb-4 p-2 rounded-md sm:w-full sm:mx-auto" type="email" placeholder="Correo electrónico" onChange={handleChange} />
-                  <input className="w-11/12 mb-4 p-2 rounded-md sm:w-full sm:mx-auto" type="phone" placeholder="Telefono" onChange={handleChange} />
-                  <textarea className="w-11/12 mb-4 p-2 rounded-md sm:w-full sm:mx-auto" placeholder="Mensaje" onChange={handleChange}></textarea>
+                  <p className='text-gray-200 p-4 font-sans max-[425px]:text-black'>
+                    Completa HOY tus datos. Tienes una asesoría y cotización a medida 100% gratuita
+                  </p>
+                  <input className="w-11/12 mb-4 p-1 rounded-md sm:w-full 
+                  sm:mx-auto" value={formData.name} type="text"
+                    name="name" placeholder="Nombre" onChange={handleChange} />
+                  <input className="w-11/12 mb-4 p-2 rounded-md sm:w-full sm:mx-auto" value={formData.email} type="email"
+                    name="email" placeholder="Correo electrónico" onChange={handleChange} />
+                  <input className="w-11/12 mb-4 p-2 rounded-md sm:w-full sm:mx-auto" value={formData.phone} type="number"
+                    name="phone" placeholder="Telefono" onChange={handleChange} />
+                  <textarea className="w-11/12 mb-4 p-2 rounded-md sm:w-full sm:mx-auto" name="message" value={formData.message} placeholder="Mensaje" onChange={handleChange}></textarea>
                   <button className="w-11/12 sm:w-full bg-blue-600 text-white font-bold py-2 px-6 rounded-md" type="submit">Enviar</button>
                 </form>
               </div>

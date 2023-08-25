@@ -12,7 +12,7 @@ const Copyright = () => {
                     rel="noreferrer"
                     target="_blank"
                   >
-                    Impuslo360
+                    Impulso360
                   </a>{" "}
                   © {new Date().getFullYear()}
                 </p>

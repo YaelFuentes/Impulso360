@@ -5,7 +5,7 @@ const Partners = ({ dark }) => {
         <div className="container">
           <div className="devman_tm_main_title" data-text-align="center">
             <span>Socios destacados</span>
-            <h3>Empresas que confían en nosotros</h3>
+            <h3>Algunas empresas que confían en nosotros</h3>
           </div>
           <br />
           <br />

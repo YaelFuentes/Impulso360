@@ -33,10 +33,11 @@ const Testimonials = () => {
                   <p className="textTestimonial">
                     Cumplieron con todos los plazos informados y fueron muy predispuestos con nuestra organización.
                     Transformaron nuestra presencia digital y nos han ayudado a crecer exponencialmente.
-                    Tienen un equipo muy profesional y dedicado, los recomiendo 100%
+                    <br/>
+                    Tienen un equipo muy profesional y dedicado, los recomiendo 100%.
                   </p>
                   <div className="details">
-                    <div className="short">
+                    <div className="short text-center">
                       <h3 className="mt-6">Ignacio Roldán</h3>
                       <span>Casa Coraje</span>
                     </div>
@@ -52,7 +53,7 @@ const Testimonials = () => {
                     han sido fundamentales para nuestro éxito en línea.
                   </p>
                   <div className="details">
-                    <div className="short">
+                    <div className="short text-center">
                       <h3 className="mt-5">Daniel Araya</h3>
                       <span>Black Group</span>
                     </div>
@@ -68,7 +69,7 @@ const Testimonials = () => {
                     Estamos muy conformes con los resultados y no dudaremos en recomendarlos a otras empresas.
                   </p>
                   <div className="details">
-                    <div className="short">
+                    <div className="short text-center">
                       <h3 className="mt-5">Carolina Riquelme</h3>
                       <span>Zendit</span>
                     </div>
@@ -84,7 +85,7 @@ const Testimonials = () => {
                     Su enfoque nos ha permitido alcanzar resultados extraordinarios. Los recomendaré a todos mis contactos.
                   </p>
                   <div className="details">
-                    <div className="short">
+                    <div className="short text-center">
                       <h3 className="mt-5">Rodrigo Sandoval</h3>
                       <span>Sur Design</span>
                     </div>

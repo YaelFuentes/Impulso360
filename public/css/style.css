@@ -488,7 +488,7 @@ h6 {
   position: relative;
   float: left;
   overflow: hidden;
-  margin-bottom: 190px;
+  margin-bottom: 100px;
 }
 .devman_tm_hero .background {
   position: absolute;
@@ -1105,7 +1105,7 @@ h6 {
 }
 .devman_tm_main_title span {
   font-size: 24px;
-  color: var(--main-color);
+  color: white;
   font-family: var(--font-family-extra);
   font-weight: 600;
 }

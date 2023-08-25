@@ -13,7 +13,7 @@ import PublicIcon from '@mui/icons-material/Public';
 
 export default function FolderList() {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-2 p-4 ml-6'>
+    <div className='md:grid-cols-2 gap-2 lg:p-4 lg:ml-10'>
       <div>
         <List sx={{ width: '100%', maxWidth: 360, color: 'white' }}>
           <ListItem>
@@ -50,6 +50,7 @@ export default function FolderList() {
           </ListItem>
         </List>
       </div>
+      <hr/>
       <div>
         <List sx={{ width: '100%', maxWidth: 360, color: 'white' }}>
           <ListItem>

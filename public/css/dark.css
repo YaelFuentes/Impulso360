@@ -52,19 +52,19 @@ body.dark .devman_tm_modalbox .description_wrap:-webkit-scrollbar-track{
 body.dark .devman_tm_modalbox .description_wrap::-webkit-scrollbar-thumb{
   background-color: #777;
   border-radius: 6px;
-  border: 3px solid #00c9ff;
+  border: 3px solid #ffffff;
 }
 body.dark .devman_tm_modalbox .box_inner{
-	background-color: #00c9ff;
+	background-color: #ffffff;
 }
 body.dark .devman_tm_modalbox .description_wrap:after{
-	background-color: #00c9ff;
+	background-color: #ffffff;
 }
 body.dark .devman_tm_modalbox .description_wrap:before{
-	background-color: #00c9ff;
+	background-color: #ffffff;
 }
 body.dark .devman_tm_features .features_list ul li .short:before{
-	background-color: #00c9ff;
+	background-color: #ffffff;
 }
 body.dark .progress_inner span.label{
 	color: #000000;

@@ -4,8 +4,8 @@ const aboutData = {
   designation: "Impulso360",
   title: "Somos un grupo de apasionados por la transformación digital",
   text: [
-    "Somos un equipo de apasionados por la transformación digital con mas de 10 años revolucionando la industria y evolucionando junto a las nuevas tecnologías.",
-    "Nos hemos unido con el objetivo de brindar soluciones integrales en el ámbito del marketing digital con fuerte orientación comercial; ayudamos a las pequeñas y medianas empresas a alcanzar sus objetivos comerciales y aumentar su presencia en línea.",
+    "Contamos con mas de 10 años revolucionando la industria y evolucionando junto a las nuevas tecnologías. Nos hemos unido con el objetivo de brindar soluciones integrales en el ámbito del marketing digital con fuerte orientación comercial; ",
+    "Ayudamos a las pequeñas y medianas empresas a alcanzar sus objetivos comerciales y aumentar su presencia en línea.",
     "Creemos en la importancia de entender a fondo su negocio y su público objetivo para poder generar resultados efectivos."
   ],
   skillIcons: [
@@ -60,7 +60,7 @@ const About = () => {
             <div className="right">
               <div className="title">
                 <span>
-                  {`Somos `} {aboutData.designation}
+                  {`Sobre Nosotros`}
                 </span>
                 <h3>{aboutData.title}</h3>
               </div>
