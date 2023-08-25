@@ -7,13 +7,13 @@ export default async function handler(req, res) {
     // Configura el transporter para enviar correos electrónicos
     const transporter = nodemailer.createTransport({
       
-      host: 'smtp.hostinger.com', // Cambia a tu proveedor de correo electrónico
-      port: 465,
+      host: process.env.HOST_SERVICE, // Cambia a tu proveedor de correo electrónico
+      port: process.env.PORT,
       secure: true,
       /* secureConnection: false, */
       auth: {
-        user: 'contacto@agenciaimpulso360.com', // Cambia a tu dirección de correo electrónico
-        pass: 'Impulso360*!', // Cambia a tu contraseña de aplicación
+        user: process.env.USER_MAIL, // Cambia a tu dirección de correo electrónico
+        pass: process.env.PASS_MAIL, // Cambia a tu contraseña de aplicación
       },
       
     });
