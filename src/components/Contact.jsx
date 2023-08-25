@@ -3,45 +3,40 @@ import { useState } from "react";
 import FolderList from "./listInfo";
 
 const Contact = () => {
-  const [mailData, setMailData] = useState({
-    name: "",
-    email: "",
-    message: "",
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
   });
-  const { name, email, message } = mailData;
-  const [error, setError] = useState(null);
-  const onChange = (e) =>
-    setMailData({ ...mailData, [e.target.name]: e.target.value });
-  const onSubmit = (e) => {
-    e.preventDefault();
-    if (name.length === 0 || email.length === 0 || message.length === 0) {
-      setError(true);
-      clearError();
-    } else {
-      // https://www.emailjs.com/
-      emailjs
-        .send(
-          "", // service id
-          "", // template id
-          mailData,
-          "" // public api
-        )
-        .then(
-          (response) => {
-            setError(false);
-            clearError();
-            setMailData({ name: "", email: "", message: "" });
-          },
-          (err) => {
-            console.log(err.text);
-          }
-        );
-    }
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
-  const clearError = () => {
-    setTimeout(() => {
-      setError(null);
-    }, 2000);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log('Correo enviado exitosamente');
+        // Haz algo aquí después de enviar el correo exitosamente
+      } else {
+        console.error('Error al enviar el correo');
+        // Manejo de errores aquí
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      // Manejo de errores aquí
+    }
   };
   return (
     <div className="devman_tm_section" id="contact">
@@ -59,7 +54,7 @@ const Contact = () => {
                     className="contact_form"
                     id="contact_form"
                     autoComplete="off"
-                    onSubmit={(e) => onSubmit(e)}
+                    onSubmit={handleSubmit}
                   >
                     <div
                       className="returnmessage"
@@ -81,8 +76,8 @@ const Contact = () => {
                           <input
                             id="name"
                             name="name"
-                            onChange={(e) => onChange(e)}
-                            value={name}
+                            onChange={handleChange}
+                            value={formData.name}
                             type="text"
                             placeholder="Nombre"
                           />
@@ -92,18 +87,18 @@ const Contact = () => {
                             id="email"
                             type="text"
                             name="email"
-                            onChange={(e) => onChange(e)}
-                            value={email}
+                            onChange={handleChange}
+                            value={formData.email}
                             placeholder="Email"
                           />
                         </li>
                         <li>
                           <input
                             id="phone"
-                            type="phone"
+                            type="number"
                             name="phone"
-                            onChange={(e) => onChange(e)}
-                            value={email}
+                            onChange={handleChange}
+                            value={formData.phone}
                             placeholder="Telefono"
                           />
                         </li>
@@ -114,8 +109,8 @@ const Contact = () => {
                         id="message"
                         placeholder="Mensaje"
                         name="message"
-                        onChange={(e) => onChange(e)}
-                        value={message}
+                        onChange={handleChange}
+                        value={formData.message}
                       />
                     </div>
                     <div className="devman_tm_button" data-position="left">
