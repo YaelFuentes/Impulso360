@@ -56,7 +56,7 @@ const Contact = () => {
                     autoComplete="off"
                     onSubmit={handleSubmit}
                   >
-                    <div
+                    {/* <div
                       className="returnmessage"
                       data-success="Your message has been received, We will contact you soon."
                     />
@@ -69,7 +69,7 @@ const Contact = () => {
                           ? "Please Fill Required Fields"
                           : "Your message has been received, We will contact you soon."}
                       </span>
-                    </div>
+                    </div> */}
                     <div className="first">
                       <ul>
                         <li>
